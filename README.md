@@ -1,73 +1,120 @@
-# Welcome to your Lovable project
+# 🗡️ Welcome to Builder Base Hackathon – *Demon Slayer Hackathon Website* by Nishchay Chaurasia
 
-## Project info
+## 🔥 Project Info
 
-**URL**: https://lovable.dev/projects/3514f8cc-913d-4935-a024-46389187b1ac
+* **Live Demo**: [Click here to view the project](https://lovable.dev/projects/3514f8cc-913d-4935-a024-46389187b1ac)
+* **Theme**: *Demon Slayer*
+* **Platform**: Builder Base Hackathon
+* **Tech Stack**: Vite, React, TypeScript, Tailwind CSS, shadcn-ui
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🛠️ How to Run or Edit the Project
 
-**Use Lovable**
+You can easily contribute and customize the codebase using any of the following methods:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3514f8cc-913d-4935-a024-46389187b1ac) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+### 💻 Set Up Locally with Your IDE
 
-**Use your preferred IDE**
+> Recommended for full control and offline development.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+#### 📦 Prerequisite: Node.js & npm
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+We suggest using [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) to manage Node.js versions.
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+```bash
+# 1. Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# 2. Navigate to the project folder
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# 3. Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 4. Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+This will start a local development server, with hot-reload for fast feedback.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+### ✍️ Edit Directly on GitHub
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. Open the GitHub repository
+2. Navigate to the desired file
+3. Click the ✏️ **Edit** icon
+4. Commit the changes with a message
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+### 🧑‍💻 Use GitHub Codespaces
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Want a cloud IDE?
 
-## How can I deploy this project?
+1. Go to your GitHub repo
+2. Click the green **Code** button
+3. Choose the **Codespaces** tab
+4. Launch a **new Codespace**
+5. Start editing directly in-browser!
 
-Simply open [Lovable](https://lovable.dev/projects/3514f8cc-913d-4935-a024-46389187b1ac) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 🚀 Deployment
 
-Yes, you can!
+This project can be easily deployed to any static hosting provider like:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+* [Vercel](https://vercel.com/)
+* [Netlify](https://www.netlify.com/)
+* GitHub Pages
+* Firebase Hosting
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Just build the app using:
+
+```bash
+npm run build
+```
+
+Then deploy the contents of the `dist` folder.
+
+---
+
+## 🌐 Custom Domain Setup
+
+To connect your own domain:
+
+1. Set up DNS records (typically a CNAME or A record)
+2. Configure your domain via your hosting platform (e.g., Vercel, Netlify)
+3. Ensure HTTPS is enabled (most platforms provide this free via Let's Encrypt)
+
+---
+
+## 📦 Technologies Used
+
+* ⚡ [Vite](https://vitejs.dev/) – Blazing fast build tool
+* 🧩 [React](https://reactjs.org/) – Powerful UI library
+* 🔠 [TypeScript](https://www.typescriptlang.org/) – Typed JavaScript
+* 🎨 [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework
+* 🧱 [shadcn/ui](https://ui.shadcn.dev/) – Accessible, customizable UI components
+
+---
+
+## 💡 Hackathon Tip
+
+This project is part of the **Builder Base Hackathon**, themed around *Demon Slayer*.
+Unleash your creativity like Tanjiro’s swordsmanship — write clean code, slay bugs, and leave no tech demon standing ⚔️🔥
+
+---
+
+## 🙌 Contributing
+
+Contributions are welcome!
+
+* Fork the repository
+* Create a new branch
+* Commit your changes
+* Open a Pull Request
+
+Together, let’s build something epic! 🛡️💻
