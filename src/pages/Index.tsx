@@ -13,10 +13,10 @@ const Index = () => {
         <div className="absolute inset-0 flame-bg opacity-20"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
           <h1 className="font-cinzel text-6xl md:text-8xl font-bold mb-6 demon-text animate-scroll-reveal">
-            DEMON SLAYER
+            Code Slayer Hackathon 2025
           </h1>
           <h2 className="text-2xl md:text-4xl font-semibold mb-8 text-foreground animate-scroll-reveal">
-            Builder Base Hackathon 2024
+            Demon Slayer: Kimetsu no Yaiba
           </h2>
           <p className="text-lg md:text-xl mb-8 text-muted-foreground max-w-2xl mx-auto animate-scroll-reveal">
             Unleash your coding prowess in the ultimate Web3 hackathon. Build, innovate, and claim your place among the legends.
@@ -88,7 +88,7 @@ const Index = () => {
                     <div className="space-y-2 text-muted-foreground">
                       <p>10:00 AM - Progress presentations</p>
                       <p>12:00 PM - Workshop: Advanced combat mechanics</p>
-                      <p>6:00 PM - BGMI exhibition match</p>
+                      <p>6:00 PM - Kimetsu no Yaiba exhibition match</p>
                     </div>
                   </div>
                 </div>
@@ -413,9 +413,9 @@ const Index = () => {
             <div>
               <h4 className="font-semibold text-accent mb-4">Contact</h4>
               <div className="space-y-2 text-muted-foreground">
-                <p className="text-sm">Location: Web3 Metaverse</p>
-                <p className="text-sm">Email: builders@builderbase.dev</p>
-                <p className="text-sm">Phone: (+91) 9999999999</p>
+                <p className="text-sm">Location: TBA</p>
+                <p className="text-sm">Email: devsphere.dev.in</p>
+                <p className="text-sm">Phone: (+91) 9876543210</p>
               </div>
             </div>
 
@@ -439,7 +439,7 @@ const Index = () => {
           </div>
 
           <div className="border-t border-border pt-8 text-center">
-            <p className="text-sm text-muted-foreground">© 2024 Builder Base Hackathon. Built with ❤️ by Web3 Builders</p>
+            <p className="text-sm text-muted-foreground">© 2025 Code Slayer Hackathon. Built with ❤️ by Developer Team</p>
           </div>
         </div>
       </footer>

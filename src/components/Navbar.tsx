@@ -23,7 +23,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-3">
             <Sword className="h-8 w-8 text-primary animate-mystical-pulse" />
             <span className="font-cinzel font-bold text-xl demon-text">
-              Builder Base Hackathon
+              Code Slayer Hackathon
             </span>
           </div>
 
