@@ -392,7 +392,7 @@ const Index = () => {
             <div className="text-center md:text-left">
               <div className="flex items-center justify-center md:justify-start space-x-3 mb-6">
                 <Sword className="h-8 w-8 text-primary animate-mystical-pulse" />
-                <span className="font-cinzel font-bold text-2xl demon-text">Builder Base</span>
+                <span className="font-cinzel font-bold text-2xl demon-text">Devsphere</span>
               </div>
               <p className="text-muted-foreground mb-4">Forged in fire. Powered by code.</p>
               <p className="text-sm text-muted-foreground">We are the battleground.</p>
