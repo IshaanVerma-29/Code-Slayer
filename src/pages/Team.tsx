@@ -14,14 +14,14 @@ const Team = () => {
             name: "Arabhay Aggarwal",
             linkedin: "https://www.linkedin.com/in/arabhay-agrawal-891013372",
             image: "/teams/arabhay.jpg",
-            role: "Tech Lead",
+            role: "Founder",
             color: "teal"
         },
         {
             name: "Nitin Sengar",
             linkedin: "https://www.linkedin.com/in/contactnitinsengar/",
             image: "/teams/nitin.jpg",
-            role: "Developer",
+            role: "Community Manager",
             color: "green"
         }
     ];
