@@ -34,7 +34,12 @@ const About = () => {
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto">
-                    <h2 className="text-4xl font-cinzel font-bold text-center mb-16 demon-text drop-shadow-2xl">About the Hackathon</h2>
+                    <h2 className="text-4xl font-cinzel font-bold text-center mb-16 demon-text drop-shadow-2xl">
+                        About the Hackathon
+                        <span className="block text-base mt-2 text-gray-300" style={{ fontSize: "0.85em" }}>
+                            ハッカソンについて
+                        </span>
+                    </h2>
 
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         {/* Left Side - About Information */}
@@ -45,7 +50,13 @@ const About = () => {
                             <div className="relative z-10 transform group-hover:-translate-y-2 transition-transform duration-300">
                                 <div className="mb-8">
                                     <div className="inline-block bg-primary/30 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-primary/20">
-                                        <span className="text-primary font-semibold">Code Slayer Hackathon 2025</span>
+                                        <span className="text-primary font-semibold">
+                                            Code Slayer Hackathon 2025
+                                            <br />
+                                            <span style={{ fontSize: "0.8em" }} className="block text-primary/80 font-normal">
+                                                コードスレイヤーハッカソン 2025
+                                            </span>
+                                        </span>
                                     </div>
                                     <h3 className="text-3xl font-bold mb-6 text-white group-hover:text-primary transition-colors duration-300 drop-shadow-lg">
                                         Unleash Your Coding Powers
