@@ -1,0 +1,751 @@
+import Navbar from "@/components/Navbar";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Flame, Sword, Trophy, Users, Calendar, Target } from "lucide-react";
+
+const Index = () => {
+  return (
+    <div className="min-h-screen bg-background cursor-sword">
+      <Navbar />
+      
+      {/* Hero Section */}
+      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden japanese-pattern">
+        <div className="absolute inset-0 flame-bg opacity-20"></div>
+        <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
+          <h1 className="font-cinzel text-6xl md:text-8xl font-bold mb-6 demon-text animate-scroll-reveal">
+            Code Slayer Hackathon 2025
+            <br />コードスレイヤーハッカソン2025
+          </h1>
+          <h2 className="text-2xl md:text-4xl font-semibold mb-8 text-foreground animate-scroll-reveal">
+            Demon Slayer: Kimetsu no Yaiba
+            <br />鬼滅の刃
+          </h2>
+          <p className="text-lg md:text-xl mb-8 text-muted-foreground max-w-2xl mx-auto animate-scroll-reveal">
+            Unleash your coding prowess in the ultimate Web3 hackathon. Build, innovate, and claim your place among the legends.
+            <br />究極のWeb3ハッカソンであなたのプログラミング力を解放しよう。構築し、革新し、伝説の中でのあなたの地位を確立せよ。
+          </p>
+          <Button size="lg" className="flame-bg hover-blade font-semibold px-8 py-4 cursor-blade">
+            <Sword className="mr-2 h-5 w-5" />
+            Enter the Battle
+            <br />戦いに参加する
+          </Button>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-cinzel font-bold text-center mb-16 demon-text">
+            About the Hackathon
+            <br />ハッカソンについて
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="p-6 hover-blade cursor-blade bg-card/50 backdrop-blur-sm">
+              <h3 className="text-xl font-semibold text-primary mb-3">
+                What is CodeSlayer Hackathon 2025?
+                <br />CodeSlayerハッカソン2025とは何ですか？
+              </h3>
+              <p className="text-muted-foreground">
+                A 3-day intensive Web3 hackathon where developers, designers, and innovators come together to build the future of decentralized applications.
+                <br />開発者、デザイナー、イノベーターが集まり、分散アプリケーションの未来を構築する3日間の集中的なWeb3ハッカソンです。
+              </p>
+            </Card>
+
+            <Card className="p-6 hover-blade cursor-blade bg-card/50 backdrop-blur-sm">
+              <h3 className="text-xl font-semibold text-primary mb-3">
+                Who can participate?
+                <br />誰が参加できますか？
+              </h3>
+              <p className="text-muted-foreground">
+                Anyone with a passion for Web3 development! From beginners to experts, we welcome all skill levels. Teams of 2-4 members are encouraged.
+                <br />Web3開発に情熱を持つ誰でも！初心者からエキスパートまで、すべてのスキルレベルを歓迎します。2〜4名のチームが推奨されます。
+              </p>
+            </Card>
+
+            <Card className="p-6 hover-blade cursor-blade bg-card/50 backdrop-blur-sm">
+              <h3 className="text-xl font-semibold text-primary mb-3">
+                Can beginners participate in the hackathon?
+                <br />初心者もハッカソンに参加できますか？
+              </h3>
+              <p className="text-muted-foreground">
+                Absolutely! We encourage beginners to join. Our mentors and workshops are designed to help newcomers learn and build alongside experienced developers.
+                <br />もちろんです！初心者の参加を歓迎しています。メンターとワークショップは、新参者が経験豊富な開発者と一緒に学び、構築できるように設計されています。
+              </p>
+            </Card>
+
+            <Card className="p-6 hover-blade cursor-blade bg-card/50 backdrop-blur-sm">
+              <h3 className="text-xl font-semibold text-primary mb-3">
+                What does the prize pool mean?
+                <br />賞金プールとは何を意味しますか？
+              </h3>
+              <p className="text-muted-foreground">
+                The prize pool represents the total rewards distributed among winners across different tracks and categories, including cash prizes, mentorship opportunities, and exclusive Builder Base NFTs.
+                <br />賞金プールは、異なるトラックとカテゴリーの勝者に配布される総報酬を表し、現金賞、メンターシップの機会、限定ビルダーベースNFTが含まれます。
+              </p>
+            </Card>
+
+            <Card className="p-6 hover-blade cursor-blade bg-card/50 backdrop-blur-sm">
+              <h3 className="text-xl font-semibold text-primary mb-3">
+                How do I register for Builder Base Hackathon 2024?
+                <br />ビルダーベースハッカソン2024にはどうやって登録しますか？
+              </h3>
+              <p className="text-muted-foreground">
+                Click the "Enter the Battle" button above to access our registration form. Early registration is recommended as spots are limited!
+                <br />上記の「戦いに参加する」ボタンをクリックして登録フォームにアクセスしてください。参加枠が限られているため、早期登録をお勧めします！
+              </p>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <Button className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-4 cursor-blade">
+              More Questions? Ask us on Discord
+              <br />他にご質問は？Discordでお聞きください
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-card/80 backdrop-blur-md py-16 px-4 border-t border-border">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-4 gap-8 mb-12">
+            <div className="text-center md:text-left">
+              <div className="flex items-center justify-center md:justify-start space-x-3 mb-6">
+                <Sword className="h-8 w-8 text-primary animate-mystical-pulse" />
+                <span className="font-cinzel font-bold text-2xl demon-text">Devsphere</span>
+              </div>
+              <p className="text-muted-foreground mb-4">
+                Forged in fire. Powered by code.
+                <br />炎で鍛えられ、コードで動く。
+              </p>
+              <p className="text-sm text-muted-foreground">
+                We are the battleground.
+                <br />我々が戦場だ。
+              </p>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-accent mb-4">
+                Quick Links
+                <br />クイックリンク
+              </h4>
+              <div className="space-y-2">
+                <a href="#home" className="block text-muted-foreground hover:text-primary transition-colors cursor-blade">
+                  Home
+                  <br />ホーム
+                </a>
+                <a href="#about" className="block text-muted-foreground hover:text-primary transition-colors cursor-blade">
+                  About
+                  <br />概要
+                </a>
+                <a href="#timeline" className="block text-muted-foreground hover:text-primary transition-colors cursor-blade">
+                  Timeline
+                  <br />タイムライン
+                </a>
+                <a href="#tracks" className="block text-muted-foreground hover:text-primary transition-colors cursor-blade">
+                  Tracks
+                  <br />トラック
+                </a>
+                <a href="#team" className="block text-muted-foreground hover:text-primary transition-colors cursor-blade">
+                  Team
+                  <br />チーム
+                </a>
+                <a href="#faqs" className="block text-muted-foreground hover:text-primary transition-colors cursor-blade">
+                  FAQs
+                  <br />よくある質問
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-accent mb-4">
+                Contact
+                <br />お問い合わせ
+              </h4>
+              <div className="space-y-2 text-muted-foreground">
+                <p className="text-sm">
+                  Location: TBA
+                  <br />場所：TBA
+                </p>
+                <p className="text-sm">
+                  Email: devsphere.dev.in
+                  <br />メール：devsphere.dev.in
+                </p>
+                <p className="text-sm">
+                  Phone: (+91) 9876543210
+                  <br />電話：(+91) 9876543210
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-accent mb-4">
+                Join Discord
+                <br />Discordに参加
+              </h4>
+              <Button className="w-full bg-primary hover:bg-primary/90 cursor-blade mb-4">
+                Connect Now
+                <br />今すぐ接続
+              </Button>
+              <div className="flex justify-center space-x-4">
+                <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/40 transition-colors cursor-blade">
+                  <span className="text-primary font-bold">X</span>
+                </div>
+                <div className="w-10 h-10 bg-secondary/20 rounded-full flex items-center justify-center hover:bg-secondary/40 transition-colors cursor-blade">
+                  <span className="text-secondary font-bold">IG</span>
+                </div>
+                <div className="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center hover:bg-accent/40 transition-colors cursor-blade">
+                  <span className="text-accent font-bold">LI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-border pt-8 text-center">
+            <p className="text-sm text-muted-foreground">
+              © 2025 Code Slayer Hackathon. Built with ❤️ by Developer Team
+              <br />© 2025 コードスレイヤーハッカソン。開発者チームが❤️で構築
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default Index;sm">
+              <Flame className="h-12 w-12 text-primary mb-4 animate-mystical-pulse" />
+              <h3 className="text-xl font-semibold mb-3">
+                Innovation
+                <br />革新
+              </h3>
+              <p className="text-muted-foreground">
+                Push the boundaries of Web3 technology
+                <br />Web3技術の境界を押し広げる
+              </p>
+            </Card>
+            <Card className="p-6 hover-blade cursor-blade bg-card/50 backdrop-blur-sm">
+              <Users className="h-12 w-12 text-primary mb-4 animate-mystical-pulse" />
+              <h3 className="text-xl font-semibold mb-3">
+                Community
+                <br />コミュニティ
+              </h3>
+              <p className="text-muted-foreground">
+                Connect with fellow builders and creators
+                <br />仲間の開発者とクリエイターとつながる
+              </p>
+            </Card>
+            <Card className="p-6 hover-blade cursor-blade bg-card/50 backdrop-blur-sm">
+              <Trophy className="h-12 w-12 text-primary mb-4 animate-mystical-pulse" />
+              <h3 className="text-xl font-semibold mb-3">
+                Rewards
+                <br />報酬
+              </h3>
+              <p className="text-muted-foreground">
+                Compete for incredible prizes and recognition
+                <br />素晴らしい賞品と認知のために競い合う
+              </p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline */}
+      <section id="timeline" className="py-20 px-4 bg-muted/20">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-cinzel font-bold text-center mb-16 demon-text">
+            Event Timeline
+            <br />イベントタイムライン
+          </h2>
+          <div className="relative">
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary to-secondary"></div>
+            
+            <div className="space-y-12">
+              {/* Day 1 */}
+              <div className="relative flex items-center">
+                <div className="flex-1 pr-8 text-right">
+                  <div className="bg-card/80 backdrop-blur-sm p-6 rounded-lg border border-primary/20">
+                    <h3 className="text-2xl font-bold text-primary mb-4">
+                      DAY 1
+                      <br />1日目
+                    </h3>
+                    <h4 className="text-xl font-semibold mb-3">
+                      Opening Ceremony
+                      <br />開会式
+                    </h4>
+                    <div className="space-y-2 text-muted-foreground">
+                      <p>
+                        10:00 AM - Welcome and rules explanation
+                        <br />午前10時 - ウェルカム・ルール説明
+                      </p>
+                      <p>
+                        11:00 AM - Team formation
+                        <br />午前11時 - チーム編成
+                      </p>
+                      <p>
+                        12:00 PM - Hacking begins!
+                        <br />正午 - ハッキング開始！
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-primary rounded-full border-4 border-background z-10"></div>
+                <div className="flex-1 pl-8"></div>
+              </div>
+
+              {/* Day 2 */}
+              <div className="relative flex items-center">
+                <div className="flex-1 pr-8"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-secondary rounded-full border-4 border-background z-10"></div>
+                <div className="flex-1 pl-8">
+                  <div className="bg-card/80 backdrop-blur-sm p-6 rounded-lg border border-secondary/20">
+                    <h3 className="text-2xl font-bold text-secondary mb-4">
+                      DAY 2
+                      <br />2日目
+                    </h3>
+                    <h4 className="text-xl font-semibold mb-3">
+                      Midpoint Check-in
+                      <br />中間チェックイン
+                    </h4>
+                    <div className="space-y-2 text-muted-foreground">
+                      <p>
+                        10:00 AM - Progress presentations
+                        <br />午前10時 - 進捗発表
+                      </p>
+                      <p>
+                        12:00 PM - Workshop: Advanced combat mechanics
+                        <br />正午 - ワークショップ：高度な戦闘メカニクス
+                      </p>
+                      <p>
+                        6:00 PM - Kimetsu no Yaiba exhibition match
+                        <br />午後6時 - 鬼滅の刃エキシビションマッチ
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Day 3 */}
+              <div className="relative flex items-center">
+                <div className="flex-1 pr-8 text-right">
+                  <div className="bg-card/80 backdrop-blur-sm p-6 rounded-lg border border-primary/20">
+                    <h3 className="text-2xl font-bold text-primary mb-4">
+                      DAY 3
+                      <br />3日目
+                    </h3>
+                    <h4 className="text-xl font-semibold mb-3">
+                      Final Battle
+                      <br />最終戦
+                    </h4>
+                    <div className="space-y-2 text-muted-foreground">
+                      <p>
+                        10:00 AM - Final presentations
+                        <br />午前10時 - 最終発表
+                      </p>
+                      <p>
+                        2:00 PM - Judging & evaluation
+                        <br />午後2時 - 審査・評価
+                      </p>
+                      <p>
+                        5:00 PM - Awards ceremony
+                        <br />午後5時 - 表彰式
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-primary rounded-full border-4 border-background z-10"></div>
+                <div className="flex-1 pl-8"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Tracks */}
+      <section id="tracks" className="py-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-cinzel font-bold text-center mb-6 demon-text">
+            Hackathon Tracks
+            <br />ハッカソントラック
+          </h2>
+          <div className="text-center mb-16">
+            <div className="inline-block bg-primary/20 px-4 py-2 rounded-full">
+              <span className="text-primary font-semibold">
+                Choose Your Path
+                <br />あなたの道を選べ
+              </span>
+            </div>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="group relative overflow-hidden bg-card/50 backdrop-blur-sm border-2 border-transparent hover:border-primary/50 transition-all duration-500 cursor-blade">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative p-8 text-center">
+                <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/20 flex items-center justify-center">
+                  <Sword className="h-10 w-10 text-primary animate-mystical-pulse" />
+                </div>
+                <div className="mb-4">
+                  <span className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-bold">
+                    Web3 & DeFi
+                  </span>
+                </div>
+                <h3 className="text-2xl font-bold mb-4">
+                  Blockchain Warriors
+                  <br />ブロックチェーン戦士
+                </h3>
+                <p className="text-muted-foreground mb-6">
+                  Build decentralized applications that revolutionize finance and empower users through blockchain technology.
+                  <br />金融を革命化し、ブロックチェーン技術を通じてユーザーに力を与える分散アプリケーションを構築する。
+                </p>
+                <div className="space-y-2">
+                  <p className="text-sm text-muted-foreground">
+                    • Smart Contracts
+                    <br />• スマートコントラクト
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    • DeFi Protocols
+                    <br />• DeFiプロトコル
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    • NFT Marketplaces
+                    <br />• NFTマーケットプレイス
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="group relative overflow-hidden bg-card/50 backdrop-blur-sm border-2 border-transparent hover:border-secondary/50 transition-all duration-500 cursor-blade">
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative p-8 text-center">
+                <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-secondary/20 flex items-center justify-center">
+                  <Flame className="h-10 w-10 text-secondary animate-mystical-pulse" />
+                </div>
+                <div className="mb-4">
+                  <span className="bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-sm font-bold">
+                    AI/ML
+                  </span>
+                </div>
+                <h3 className="text-2xl font-bold mb-4">
+                  AI Demon Slayers
+                  <br />AI鬼殺隊
+                </h3>
+                <p className="text-muted-foreground mb-6">
+                  Harness the power of artificial intelligence to solve real-world problems and create intelligent solutions.
+                  <br />人工知能の力を活用して現実世界の問題を解決し、インテリジェントなソリューションを創造する。
+                </p>
+                <div className="space-y-2">
+                  <p className="text-sm text-muted-foreground">
+                    • Machine Learning Models
+                    <br />• 機械学習モデル
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    • Computer Vision
+                    <br />• コンピュータビジョン
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    • Natural Language Processing
+                    <br />• 自然言語処理
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="group relative overflow-hidden bg-card/50 backdrop-blur-sm border-2 border-transparent hover:border-accent/50 transition-all duration-500 cursor-blade">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative p-8 text-center">
+                <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-accent/20 flex items-center justify-center">
+                  <Trophy className="h-10 w-10 text-accent animate-mystical-pulse" />
+                </div>
+                <div className="mb-4">
+                  <span className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-bold">
+                    Gaming
+                    <br />ゲーミング
+                  </span>
+                </div>
+                <h3 className="text-2xl font-bold mb-4">
+                  Game Developers
+                  <br />ゲーム開発者
+                </h3>
+                <p className="text-muted-foreground mb-6">
+                  Create immersive gaming experiences that captivate players and push the boundaries of interactive entertainment.
+                  <br />プレイヤーを魅了し、インタラクティブエンターテイメントの境界を押し広げる没入型ゲーム体験を創造する。
+                </p>
+                <div className="space-y-2">
+                  <p className="text-sm text-muted-foreground">
+                    • Web Games
+                    <br />• ウェブゲーム
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    • AR/VR Experiences
+                    <br />• AR/VR体験
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    • Multiplayer Platforms
+                    <br />• マルチプレイヤープラットフォーム
+                  </p>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Rewards */}
+      <section id="rewards" className="py-20 px-4 bg-muted/20">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-4xl font-cinzel font-bold mb-6 demon-text">
+            Prize Pool
+            <br />賞金プール
+          </h2>
+          <h3 className="text-2xl font-semibold mb-16 text-muted-foreground">
+            Main Tournament Prizes
+            <br />メイントーナメント賞
+          </h3>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="relative group cursor-blade">
+              <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+              <Card className="relative bg-card/90 backdrop-blur-sm p-8 rounded-lg border-0">
+                <div className="absolute top-4 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-bold">
+                    CHAMPION
+                    <br />チャンピオン
+                  </span>
+                </div>
+                <div className="mt-8 mb-6">
+                  <Trophy className="h-16 w-16 mx-auto text-primary animate-mystical-pulse" />
+                </div>
+                <h4 className="text-xl font-bold mb-2">
+                  Lone Survivor
+                  <br />最後の生存者
+                </h4>
+                <p className="text-sm text-muted-foreground mb-6">
+                  of Builder Base Hackathon 2024
+                  <br />ビルダーベースハッカソン2024の
+                </p>
+                <div className="text-4xl font-bold text-primary">₹25,000</div>
+              </Card>
+            </div>
+
+            <div className="relative group cursor-blade">
+              <div className="absolute -inset-1 bg-gradient-to-r from-secondary to-accent rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+              <Card className="relative bg-card/90 backdrop-blur-sm p-8 rounded-lg border-0">
+                <div className="absolute top-4 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-secondary text-secondary-foreground px-4 py-1 rounded-full text-sm font-bold">
+                    RUNNER-UP
+                    <br />準優勝
+                  </span>
+                </div>
+                <div className="mt-8 mb-6">
+                  <Sword className="h-16 w-16 mx-auto text-secondary animate-mystical-pulse" />
+                </div>
+                <h4 className="text-xl font-bold mb-2">
+                  Demon Hunter
+                  <br />鬼狩り
+                </h4>
+                <p className="text-sm text-muted-foreground mb-6">
+                  of Builder Base Hackathon 2024
+                  <br />ビルダーベースハッカソン2024の
+                </p>
+                <div className="text-4xl font-bold text-secondary">₹15,000</div>
+              </Card>
+            </div>
+
+            <div className="relative group cursor-blade">
+              <div className="absolute -inset-1 bg-gradient-to-r from-accent to-primary rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+              <Card className="relative bg-card/90 backdrop-blur-sm p-8 rounded-lg border-0">
+                <div className="absolute top-4 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-bold">
+                    3RD PLACE
+                    <br />3位
+                  </span>
+                </div>
+                <div className="mt-8 mb-6">
+                  <Flame className="h-16 w-16 mx-auto text-accent animate-mystical-pulse" />
+                </div>
+                <h4 className="text-xl font-bold mb-2">
+                  Rising Slayer
+                  <br />新進の剣士
+                </h4>
+                <p className="text-sm text-muted-foreground mb-6">
+                  of Builder Base Hackathon 2024
+                  <br />ビルダーベースハッカソン2024の
+                </p>
+                <div className="text-4xl font-bold text-accent">₹10,000</div>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sponsors */}
+      <section id="sponsors" className="py-20 px-4">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-4xl font-cinzel font-bold mb-16 demon-text">
+            Our Sponsors
+            <br />スポンサー
+          </h2>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+            <Card className="p-8 hover-blade cursor-blade bg-card/50 backdrop-blur-sm group">
+              <div className="h-16 flex items-center justify-center">
+                <div className="text-2xl font-bold text-primary group-hover:scale-110 transition-transform">
+                  Sponsor 1
+                  <br />スポンサー1
+                </div>
+              </div>
+            </Card>
+            <Card className="p-8 hover-blade cursor-blade bg-card/50 backdrop-blur-sm group">
+              <div className="h-16 flex items-center justify-center">
+                <div className="text-2xl font-bold text-secondary group-hover:scale-110 transition-transform">
+                  Sponsor 2
+                  <br />スポンサー2
+                </div>
+              </div>
+            </Card>
+            <Card className="p-8 hover-blade cursor-blade bg-card/50 backdrop-blur-sm group">
+              <div className="h-16 flex items-center justify-center">
+                <div className="text-2xl font-bold text-accent group-hover:scale-110 transition-transform">
+                  Sponsor 3
+                  <br />スポンサー3
+                </div>
+              </div>
+            </Card>
+            <Card className="p-8 hover-blade cursor-blade bg-card/50 backdrop-blur-sm group">
+              <div className="h-16 flex items-center justify-center">
+                <div className="text-2xl font-bold text-primary group-hover:scale-110 transition-transform">
+                  Sponsor 4
+                  <br />スポンサー4
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Team */}
+      <section id="team" className="py-20 px-4 bg-muted/20">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-cinzel font-bold text-center mb-6 demon-text">
+            Meet The Team
+            <br />チームに会おう
+          </h2>
+          <p className="text-center text-xl text-primary mb-16">
+            Builder Base Hackathon 2024
+            <br />ビルダーベースハッカソン2024
+          </p>
+          
+          <div className="grid md:grid-cols-4 gap-8">
+            <Card className="p-6 text-center hover-blade cursor-blade bg-card/50 backdrop-blur-sm group">
+              <div className="relative mb-6">
+                <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                  <Users className="h-12 w-12 text-white" />
+                </div>
+                <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                  <span className="text-white text-xs">✓</span>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-primary">
+                Team Lead
+                <br />チームリード
+              </h3>
+              <div className="mb-4">
+                <span className="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">
+                  Lead Organizer
+                  <br />主催者リード
+                </span>
+              </div>
+              <p className="text-muted-foreground text-sm">
+                Leading the charge in Web3 innovation
+                <br />Web3革新の先頭に立つ
+              </p>
+            </Card>
+
+            <Card className="p-6 text-center hover-blade cursor-blade bg-card/50 backdrop-blur-sm group">
+              <div className="relative mb-6">
+                <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-secondary to-accent flex items-center justify-center">
+                  <Users className="h-12 w-12 text-white" />
+                </div>
+                <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-secondary rounded-full flex items-center justify-center">
+                  <span className="text-white text-xs">✓</span>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-secondary">
+                Tech Lead
+                <br />テックリード
+              </h3>
+              <div className="mb-4">
+                <span className="bg-secondary/20 text-secondary px-3 py-1 rounded-full text-sm">
+                  Lead Developer
+                  <br />リード開発者
+                </span>
+              </div>
+              <p className="text-muted-foreground text-sm">
+                Building the future of decentralized apps
+                <br />分散アプリの未来を構築
+              </p>
+            </Card>
+
+            <Card className="p-6 text-center hover-blade cursor-blade bg-card/50 backdrop-blur-sm group">
+              <div className="relative mb-6">
+                <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center">
+                  <Users className="h-12 w-12 text-white" />
+                </div>
+                <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-accent rounded-full flex items-center justify-center">
+                  <span className="text-white text-xs">✓</span>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-accent">
+                Community Manager
+                <br />コミュニティマネージャー
+              </h3>
+              <div className="mb-4">
+                <span className="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">
+                  Lead Organizer
+                  <br />主催者リード
+                </span>
+              </div>
+              <p className="text-muted-foreground text-sm">
+                Fostering the Web3 builder community
+                <br />Web3開発者コミュニティの育成
+              </p>
+            </Card>
+
+            <Card className="p-6 text-center hover-blade cursor-blade bg-card/50 backdrop-blur-sm group">
+              <div className="relative mb-6">
+                <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                  <Users className="h-12 w-12 text-white" />
+                </div>
+                <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                  <span className="text-white text-xs">✓</span>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-primary">
+                Design Lead
+                <br />デザインリード
+              </h3>
+              <div className="mb-4">
+                <span className="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">
+                  Lead Designer
+                  <br />リードデザイナー
+                </span>
+              </div>
+              <p className="text-muted-foreground text-sm">
+                Crafting beautiful Web3 experiences
+                <br />美しいWeb3体験を創造
+              </p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQs */}
+      <section id="faqs" className="py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-cinzel font-bold text-center mb-16 demon-text">
+            Frequently Asked Questions
+            <br />よくある質問
+          </h2>
+          
+          <div className="space-y-4">
+            <Card className="p-6 hover-blade cursor-blade bg-card/50 backdrop-blur-
