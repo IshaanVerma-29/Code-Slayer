@@ -35,10 +35,20 @@ const Tracks = () => {
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto">
-                    <h2 className="text-4xl font-cinzel font-bold text-center mb-6 demon-text drop-shadow-2xl">Hackathon Tracks</h2>
+                    <h2 className="text-4xl font-cinzel font-bold text-center mb-6 demon-text drop-shadow-2xl">
+                        Hackathon Tracks
+                        <div className="text-base mt-1 text-gray-300" style={{ fontSize: "0.85em" }}>
+                            ハッカソンのトラック
+                        </div>
+                    </h2>
                     <div className="text-center mb-16">
                         <div className="inline-block bg-primary/30 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20">
-                            <span className="text-primary font-semibold drop-shadow-md">Choose Your Path</span>
+                            <span className="text-primary font-semibold drop-shadow-md">
+                                Choose Your Path
+                                <div style={{ fontSize: "0.8em" }} className="text-primary/80 mt-1">
+                                    あなたの道を選んでください
+                                </div>
+                            </span>
                         </div>
                     </div>
 

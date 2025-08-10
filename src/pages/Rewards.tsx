@@ -36,8 +36,18 @@ const Rewards = () => {
                 </div>
 
                 <div className="relative z-10 max-w-6xl mx-auto text-center">
-                    <h2 className="text-4xl font-cinzel font-bold mb-6 demon-text drop-shadow-2xl">Prize Pool</h2>
-                    <h3 className="text-2xl font-semibold mb-16 text-gray-200 drop-shadow-lg">Main Tournament Prizes</h3>
+                    <h2 className="text-4xl font-cinzel font-bold mb-6 demon-text drop-shadow-2xl">
+                        Prize Pool
+                        <div className="text-base mt-1 text-gray-300" style={{ fontSize: "0.85em" }}>
+                            賞金総額
+                        </div>
+                    </h2>
+                    <h3 className="text-2xl font-semibold mb-16 text-gray-200 drop-shadow-lg">
+                        Main Tournament Prizes
+                        <div className="text-sm mt-1 text-gray-300" style={{ fontSize: "0.8em" }}>
+                            メイントーナメント賞品
+                        </div>
+                    </h3>
 
                     <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-8">
                         {/* Champion Card */}

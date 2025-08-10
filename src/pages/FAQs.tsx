@@ -31,7 +31,12 @@ const FAQs = () => {
                 </div>
 
                 <div className="relative z-10 max-w-4xl mx-auto">
-                    <h2 className="text-4xl font-cinzel font-bold text-center mb-16 demon-text drop-shadow-lg">Frequently Asked Questions</h2>
+                    <h2 className="text-4xl font-cinzel font-bold text-center mb-16 demon-text drop-shadow-lg">
+                        Frequently Asked Questions
+                        <div className="text-base mt-2 text-gray-300" style={{ fontSize: "0.85em" }}>
+                            よくある質問
+                        </div>
+                    </h2>
 
                     <div className="space-y-4">
                         <Card className="p-6 hover-blade cursor-blade bg-gray-900/90 backdrop-blur-xl border border-blue-500/50 group hover:border-blue-400/80 transition-all duration-500 shadow-2xl hover:shadow-blue-500/30">

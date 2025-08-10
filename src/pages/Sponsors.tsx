@@ -25,7 +25,12 @@ const Sponsors = () => {
                 </div>
 
                 <div className="relative z-10 max-w-6xl mx-auto text-center">
-                    <h2 className="text-4xl font-cinzel font-bold mb-16 demon-text drop-shadow-lg">Our Sponsors</h2>
+                    <h2 className="text-4xl font-cinzel font-bold mb-16 demon-text drop-shadow-lg">
+                        Our Sponsors
+                        <div className="text-base mt-2 text-gray-300" style={{ fontSize: "0.85em" }}>
+                            私たちのスポンサー
+                        </div>
+                    </h2>
 
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
                         <Card className="p-8 hover-blade cursor-blade bg-gray-900/90 backdrop-blur-xl border border-purple-500/50 group hover:border-purple-400/80 transition-all duration-500 shadow-2xl hover:shadow-purple-500/30">

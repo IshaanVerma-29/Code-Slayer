@@ -4,24 +4,39 @@ import { Linkedin } from "lucide-react";
 const Team = () => {
     const teamMembers = [
         {
-            name: "Nisha kumari",
+            name: "Nisha Kumari",
             linkedin: "http://www.linkedin.com/in/nisha-kumari-4588b1303",
             image: "/teams/nisha.jpg",
-            role: "Founder",
+            role: (
+                <>
+                    Founder
+                    <div style={{ fontSize: "0.8em" }}>創設者</div>
+                </>
+            ),
             color: "green"
         },
         {
             name: "Arabhay Aggarwal",
             linkedin: "https://www.linkedin.com/in/arabhay-agrawal-891013372",
             image: "/teams/arabhay.jpg",
-            role: "Founder",
+            role: (
+                <>
+                    Founder
+                    <div style={{ fontSize: "0.8em" }}>創設者</div>
+                </>
+            ),
             color: "teal"
         },
         {
             name: "Nitin Sengar",
             linkedin: "https://www.linkedin.com/in/contactnitinsengar/",
             image: "/teams/nitin.jpg",
-            role: "Community Manager",
+            role: (
+                <>
+                    Community Manager
+                    <div style={{ fontSize: "0.8em" }}>コミュニティマネージャー</div>
+                </>
+            ),
             color: "green"
         }
     ];
