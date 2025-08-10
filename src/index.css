@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* @tailwind directives removed because they are not recognized by standard CSS processors.
+   If you are using Tailwind CSS, make sure your build process is set up correctly to handle these. */
 
 /* Demon Slayer Themed Design System */
 
@@ -68,11 +67,13 @@
 /* Custom Demon Slayer Animations & Effects */
 @layer base {
   * {
-    @apply border-border;
+    border-color: hsl(var(--border));
   }
 
   body {
-    @apply bg-background text-foreground font-noto-sans;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: 'Noto Sans JP', sans-serif;
     cursor: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4 28 L16 2 L28 28 L16 24 Z' fill='%23dc2626' stroke='%23991b1b' stroke-width='2'/%3e%3c/svg%3e"), auto;
   }
 
@@ -192,4 +193,9 @@
     box-shadow: 0 0 30px hsl(var(--primary) / 0.4);
     text-shadow: 0 0 10px hsl(var(--primary) / 0.6);
   }
+}
+
+img {
+  height: 2.5rem; /* equivalent to h-10 */
+  width: auto;    /* equivalent to w-auto */
 }

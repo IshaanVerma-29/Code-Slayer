@@ -71,7 +71,7 @@ const About = () => {
                                     <div className="grid grid-cols-2 gap-6">
                                         <div className="space-y-2">
                                             <h4 className="font-semibold text-primary drop-shadow-md">Duration</h4>
-                                            <p className="drop-shadow-sm">48 Hours of Pure Innovation</p>
+                                            <p className="drop-shadow-sm">30+ Hours of Pure Innovation</p>
                                         </div>
                                         <div className="space-y-2">
                                             <h4 className="font-semibold text-primary drop-shadow-md">Teams</h4>
@@ -83,7 +83,7 @@ const About = () => {
                                         </div>
                                         <div className="space-y-2">
                                             <h4 className="font-semibold text-primary drop-shadow-md">Prizes</h4>
-                                            <p className="drop-shadow-sm">₹50,000+ Prize Pool</p>
+                                            <p className="drop-shadow-sm">₹15,000+ Prize Pool</p>
                                         </div>
                                     </div>
 
@@ -102,7 +102,7 @@ const About = () => {
                             <div className="relative z-10 transform group-hover:-translate-y-2 transition-transform duration-300">
                                 <div className="relative overflow-hidden rounded-xl group-hover:scale-105 transition-transform duration-500">
                                     <img
-                                        src="/hackathon logo.png"
+                                        src="C:/Users/ISHAAN/OneDrive/Desktop/CLASSROOM/codeslayerlogo.jpeg"
                                         alt="Code Slayer Hackathon"
                                         className="w-full h-auto object-contain max-h-96 group-hover:scale-110 transition-transform duration-700 drop-shadow-2xl"
                                     />
