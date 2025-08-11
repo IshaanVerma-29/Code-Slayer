@@ -20,7 +20,8 @@ const Timeline = () => {
                 </div>
 
                 <div className="relative z-10 max-w-6xl mx-auto">
-                    <h2 className="text-4xl font-cinzel font-bold text-center mb-16 demon-text drop-shadow-2xl">
+                    <h2 className="text-4xl font-cinzel font-bold text-center mb-16 demon-text drop-shadow-2xl flex flex-col items-center">
+
                         Event Timeline
                         <div className="text-base mt-1 text-gray-300" style={{ fontSize: '0.8em' }}>イベントタイムライン</div>
                     </h2>

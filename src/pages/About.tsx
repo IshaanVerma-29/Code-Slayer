@@ -22,7 +22,7 @@ const About = () => {
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto">
-                    <h2 className="text-4xl font-cinzel font-bold text-center mb-16 demon-text drop-shadow-2xl">
+                    <h2 className="text-4xl font-cinzel font-bold text-center mb-16 demon-text drop-shadow-2xl flex flex-col items-center">
                         About the Hackathon
                         <span className="block text-base mt-2 text-gray-300" style={{ fontSize: "0.85em" }}>
                             ハッカソンについて

@@ -28,15 +28,6 @@ const Team = () => {
 
     return (
         <>
-            {/* Section Separator */}
-            <div className="relative h-32 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-r from-green-600/30 via-teal-500/40 to-green-600/30"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <div className="w-24 h-1 bg-gradient-to-r from-transparent via-green-500 to-transparent"></div>
-                </div>
-            </div>
-
             <section id="team" className="relative py-20 px-4 overflow-hidden">
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
@@ -50,7 +41,7 @@ const Team = () => {
                 </div>
 
                 <div className="relative z-10 max-w-6xl mx-auto">
-                    <h2 className="text-4xl font-cinzel font-bold text-center mb-6 demon-text drop-shadow-lg">Meet The Team</h2>
+                    <h2 className="text-4xl font-cinzel font-bold text-center mb-6 demon-text drop-shadow-lg flex flex-col items-center">Meet The Team</h2>
                     <p className="text-center text-xl text-primary mb-16 drop-shadow-md">Code Slayer Hackathon 2K25</p>
 
                     <div className="grid md:grid-cols-3 gap-8 justify-center">

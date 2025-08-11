@@ -9,41 +9,52 @@ const Footer = () => {
                     <div className="text-center md:text-left">
                         <div className="flex items-center justify-center md:justify-start space-x-3 mb-6">
                             <Sword className="h-8 w-8 text-primary animate-mystical-pulse" />
-                            <span className="font-cinzel font-bold text-2xl demon-text">Devsphere</span>
+                            <span className="font-cinzel font-bold text-2xl demon-text" data-text="Devsphere">Devsphere</span>
                         </div>
                         <p className="text-muted-foreground mb-4">Forged in fire. Powered by code.</p>
                         <p className="text-sm text-muted-foreground">We are the battleground.</p>
                     </div>
 
                     <div>
-                        <h4 className="font-semibold text-accent mb-4">Quick Links</h4>
+                        <h4 className="font-semibold text-accent mb-4 relative overflow-hidden group">
+                            Quick Links
+                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"></span>
+                        </h4>
                         <div className="space-y-2">
-                            <a href="/" className="block text-muted-foreground hover:text-primary transition-colors cursor-blade">Home</a>
-                            <a href="/about" className="block text-muted-foreground hover:text-primary transition-colors cursor-blade">About</a>
-                            <a href="/timeline" className="block text-muted-foreground hover:text-primary transition-colors cursor-blade">Timeline</a>
-                            <a href="/tracks" className="block text-muted-foreground hover:text-primary transition-colors cursor-blade">Tracks</a>
-                            <a href="/team" className="block text-muted-foreground hover:text-primary transition-colors cursor-blade">Team</a>
-                            <a href="/faqs" className="block text-muted-foreground hover:text-primary transition-colors cursor-blade">FAQs</a>
+                            <a href="#home" className="block text-muted-foreground hover:text-primary transition-colors cursor-blade hover:translate-x-1 duration-300">Home</a>
+                            <a href="#about" className="block text-muted-foreground hover:text-primary transition-colors cursor-blade hover:translate-x-1 duration-300">About</a>
+                            <a href="#timeline" className="block text-muted-foreground hover:text-primary transition-colors cursor-blade hover:translate-x-1 duration-300">Timeline</a>
+                            <a href="#tracks" className="block text-muted-foreground hover:text-primary transition-colors cursor-blade hover:translate-x-1 duration-300">Tracks</a>
+                            <a href="#team" className="block text-muted-foreground hover:text-primary transition-colors cursor-blade hover:translate-x-1 duration-300">Team</a>
+                            <a href="#faqs" className="block text-muted-foreground hover:text-primary transition-colors cursor-blade hover:translate-x-1 duration-300">FAQs</a>
                         </div>
                     </div>
 
                     <div>
-                        <h4 className="font-semibold text-accent mb-4">Contact</h4>
+                        <h4 className="font-semibold text-accent mb-4 relative overflow-hidden group">
+                            Contact
+                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"></span>
+                        </h4>
                         <div className="space-y-2 text-muted-foreground">
-                            <div className="flex items-center space-x-2">
-                                <MapPin className="h-4 w-4 text-accent" />
+                            <div className="flex items-center space-x-2 group hover:text-white transition-colors duration-300">
+                                <MapPin className="h-4 w-4 text-accent group-hover:scale-110 transition-transform duration-300" />
                                 <p className="text-sm">DELHI</p>
                             </div>
-                            <div className="flex items-center space-x-2">
-                                <Mail className="h-4 w-4 text-accent" />
-                                <p className="text-sm">devsphereindia25@gmail.com</p>
+                            <div className="flex items-center space-x-2 group hover:text-white transition-colors duration-300">
+                                <Mail className="h-4 w-4 text-accent group-hover:scale-110 transition-transform duration-300" />
+                                <a 
+                                    href="mailto:devsphereindia25@gmail.com" 
+                                    className="text-sm hover:text-primary transition-colors duration-300"
+                                >
+                                    devsphereindia25@gmail.com
+                                </a>
                             </div>
-                            <div className="flex items-center space-x-2">
-                                <Phone className="h-4 w-4 text-accent" />
+                            <div className="flex items-center space-x-2 group hover:text-white transition-colors duration-300">
+                                <Phone className="h-4 w-4 text-accent group-hover:scale-110 transition-transform duration-300" />
                                 <p className="text-sm">9716387381 (Nisha kumari)</p>
                             </div>
-                            <div className="flex items-center space-x-2">
-                                <Phone className="h-4 w-4 text-accent" />
+                            <div className="flex items-center space-x-2 group hover:text-white transition-colors duration-300">
+                                <Phone className="h-4 w-4 text-accent group-hover:scale-110 transition-transform duration-300" />
                                 <p className="text-sm">9983750681 (Arabhay Aggarwal)</p>
                             </div>
                         </div>

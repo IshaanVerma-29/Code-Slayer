@@ -98,6 +98,56 @@
   section + section {
     margin-top: -1px; /* Remove gaps between sections */
   }
+  
+  /* Enhanced Heading Styles */
+  h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Animated heading underline effect */
+  h2:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-flame);
+    transition: all 0.5s ease;
+    transform: translateX(-50%);
+  }
+  
+  section:hover h2:after {
+    width: 100px;
+  }
+  
+  /* Enhanced demon text effect */
+  .demon-text {
+    background: var(--gradient-flame);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 15px rgba(255, 100, 50, 0.5);
+    position: relative;
+    display: inline-block;
+  }
+  
+  .demon-text:before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: var(--gradient-flame);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: blur(8px);
+    opacity: 0.7;
+  }
 }
 
 @layer components {
@@ -110,9 +160,41 @@
     cursor: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4 28 L16 2 L28 28 L16 24 Z' fill='%23f97316' stroke='%23ea580c' stroke-width='2'/%3e%3c/svg%3e"), auto;
   }
   
-  /* Smooth transition for all interactive elements */
+  /* Enhanced hover effects for all interactive elements */
   a, button, .interactive {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  a:hover, button:hover, .interactive:hover {
+    transform: translateY(-2px);
+  }
+  
+  a:before, button:before, .interactive:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to top, rgba(255,255,255,0.1), transparent);
+    transition: height 0.3s ease;
+    z-index: -1;
+  }
+  
+  a:hover:before, button:hover:before, .interactive:hover:before {
+    height: 100%;
+  }
+  
+  /* Enhanced card hover effects */
+  .card-hover {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 20px 25px -5px rgba(var(--primary), 0.3);
   }
   
   /* Accordion styling for FAQs */
@@ -123,5 +205,46 @@
   .accordion-item[data-state="open"] {
     background-color: rgba(30, 41, 59, 0.95);
     box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.3);
+    transform: scale(1.02);
+  }
+  
+  /* Flame background animation */
+  .flame-bg {
+    background: var(--gradient-flame);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .flame-bg:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .flame-bg:hover:before {
+    opacity: 1;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(0.8); opacity: 0.5; }
+    50% { transform: scale(1.2); opacity: 0.2; }
+    100% { transform: scale(0.8); opacity: 0.5; }
+  }
+  
+  /* Enhanced hover-blade effect */
+  .hover-blade {
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .hover-blade:hover {
+    transform: translateY(-3px) rotate(1deg);
+    box-shadow: 0 15px 30px -10px rgba(var(--accent), 0.4);
   }
 }

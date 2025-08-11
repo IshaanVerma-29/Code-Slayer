@@ -3,15 +3,6 @@ import { Card } from "@/components/ui/card";
 const Sponsors = () => {
     return (
         <>
-            {/* Section Separator */}
-            <div className="relative h-32 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600/30 via-blue-500/40 to-purple-600/30"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <div className="w-24 h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
-                </div>
-            </div>
-
             <section id="sponsors" className="relative py-20 px-4 overflow-hidden">
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">

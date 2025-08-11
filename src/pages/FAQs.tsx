@@ -56,7 +56,7 @@ const FAQs = () => {
                 </div>
 
                 <div className="relative z-10 max-w-4xl mx-auto">
-                    <h2 className="text-4xl font-cinzel font-bold text-center mb-16 demon-text drop-shadow-lg">
+                    <h2 className="text-4xl font-cinzel font-bold text-center mb-16 demon-text drop-shadow-lg flex flex-col items-center" data-text="Frequently Asked Questions">
                         Frequently Asked Questions
                         <div
                             className="text-base mt-2 text-gray-300"
@@ -71,12 +71,15 @@ const FAQs = () => {
                             <AccordionItem 
                                 key={idx} 
                                 value={`item-${idx}`}
-                                className={`p-4 hover-blade cursor-blade bg-gray-900/90 backdrop-blur-xl border ${faq.border} transition-all duration-500 shadow-2xl rounded-lg overflow-hidden accordion-item`}
+                                className={`p-4 hover-blade cursor-blade bg-gray-900/90 backdrop-blur-xl border ${faq.border} transition-all duration-500 shadow-2xl rounded-lg overflow-hidden accordion-item group`}
                             >
-                                <AccordionTrigger className="text-xl font-semibold text-primary drop-shadow-lg hover:no-underline">
-                                    {faq.question}
+                                <AccordionTrigger className="text-xl font-semibold text-primary drop-shadow-lg hover:no-underline group-hover:translate-x-1 transition-transform duration-300">
+                                    <div className="flex items-center">
+                                        <span className="mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">→</span>
+                                        {faq.question}
+                                    </div>
                                 </AccordionTrigger>
-                                <AccordionContent className="text-gray-300 drop-shadow-md pt-2">
+                                <AccordionContent className="text-gray-300 drop-shadow-md pt-2 pl-4 border-l-2 border-blue-500/30 mt-2">
                                     {faq.answer}
                                 </AccordionContent>
                             </AccordionItem>
@@ -85,7 +88,7 @@ const FAQs = () => {
 
                     <div className="text-center mt-12">
                         <Button
-                            className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 cursor-blade transition-all duration-300 hover:scale-105 shadow-2xl hover:shadow-green-500/40 backdrop-blur-sm border border-green-400/30"
+                            className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 cursor-blade transition-all duration-300 hover:scale-105 shadow-2xl hover:shadow-green-500/40 backdrop-blur-sm border border-green-400/30 group overflow-hidden"
                             onClick={() =>
                                 window.open(
                                     "https://chat.whatsapp.com/E28GNRJEjxrGOwZJoAy5bB",
@@ -93,8 +96,11 @@ const FAQs = () => {
                                 )
                             }
                         >
-                            <MessageCircle className="mr-2 h-5 w-5 drop-shadow-lg" />
-                            More Questions? Ask us on WhatsApp
+                            <MessageCircle className="mr-2 h-5 w-5 drop-shadow-lg group-hover:rotate-12 transition-transform duration-300" />
+                            <span className="relative">
+                                More Questions? Ask us on WhatsApp
+                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white/50 group-hover:w-full transition-all duration-300"></span>
+                            </span>
                         </Button>
                     </div>
                 </div>
