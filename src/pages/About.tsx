@@ -3,19 +3,7 @@ import { Card } from "@/components/ui/card";
 const About = () => {
     return (
         <>
-            {/* Section Separator */}
-            <div className="relative h-32 bg-gradient-to-b from-black/80 via-primary/10 to-transparent">
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-secondary/30 to-accent/20"></div>
-                <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary to-transparent"></div>
-                {/* Decorative elements */}
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <div className="w-16 h-16 border-2 border-primary/30 rounded-full flex items-center justify-center backdrop-blur-sm bg-card/20">
-                        <div className="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-full animate-mystical-pulse"></div>
-                    </div>
-                </div>
-            </div>
-
-            <section id="about" className="relative py-20 px-4 overflow-hidden">
+            <section id="about" className="relative py-20 px-4 overflow-hidden transition-all duration-700 ease-in-out">
                 {/* Video Background */}
                 <div className="absolute inset-0 w-full h-full">
                     <video

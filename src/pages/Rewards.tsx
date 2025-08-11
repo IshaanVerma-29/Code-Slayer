@@ -17,7 +17,7 @@ const Rewards = () => {
                 </div>
             </div>
 
-            <section id="rewards" className="relative py-20 px-4 overflow-hidden">
+            <section id="rewards" className="relative py-20 px-4 overflow-hidden transition-all duration-700 ease-in-out">
                 {/* Video Background */}
                 <div className="absolute inset-0 w-full h-full">
                     <video

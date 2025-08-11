@@ -81,6 +81,23 @@
   html {
     scroll-behavior: smooth;
   }
+  
+  /* Enhanced smooth scrolling */
+  section {
+    opacity: 0.85;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  section:target, section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Smooth section transitions */
+  section + section {
+    margin-top: -1px; /* Remove gaps between sections */
+  }
 }
 
 @layer components {
@@ -92,111 +109,19 @@
   .cursor-blade:hover {
     cursor: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4 28 L16 2 L28 28 L16 24 Z' fill='%23f97316' stroke='%23ea580c' stroke-width='2'/%3e%3c/svg%3e"), auto;
   }
-
-  /* Flame Background Animation */
-  .flame-bg {
-    background: var(--gradient-flame);
-    background-size: 400% 400%;
-    animation: flame-dance 4s ease-in-out infinite;
+  
+  /* Smooth transition for all interactive elements */
+  a, button, .interactive {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
-
-  /* Mystical Glow Effects */
-  .mystical-glow {
-    box-shadow: 0 0 30px hsl(var(--primary) / 0.3), 0 0 80px hsl(var(--primary) / 0.1);
+  
+  /* Accordion styling for FAQs */
+  .accordion-item {
+    transition: all 0.5s ease;
   }
-
-  .demon-text {
-    background: var(--gradient-flame);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 200%;
-    animation: flame-text 3s ease-in-out infinite;
+  
+  .accordion-item[data-state="open"] {
+    background-color: rgba(30, 41, 59, 0.95);
+    box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.3);
   }
-
-  /* Traditional Japanese Pattern */
-  .japanese-pattern::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-      radial-gradient(circle at 25% 25%, hsl(var(--primary) / 0.1) 2px, transparent 2px),
-      radial-gradient(circle at 75% 75%, hsl(var(--secondary) / 0.1) 2px, transparent 2px);
-    background-size: 40px 40px;
-    pointer-events: none;
-    z-index: -1;
-  }
-}
-
-@layer utilities {
-  /* Keyframe Animations */
-  @keyframes flame-dance {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-  }
-
-  @keyframes flame-text {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-  }
-
-  @keyframes blade-slash {
-    0% { transform: translateX(-100%) rotate(-45deg); opacity: 0; }
-    50% { opacity: 1; }
-    100% { transform: translateX(100%) rotate(-45deg); opacity: 0; }
-  }
-
-  @keyframes mystical-pulse {
-    0%, 100% { 
-      box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
-      transform: scale(1);
-    }
-    50% { 
-      box-shadow: 0 0 40px hsl(var(--primary) / 0.5);
-      transform: scale(1.05);
-    }
-  }
-
-  @keyframes ember-float {
-    0% { transform: translateY(0px) rotate(0deg); opacity: 1; }
-    100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
-  }
-
-  @keyframes scroll-reveal {
-    from { 
-      opacity: 0; 
-      transform: translateY(50px); 
-    }
-    to { 
-      opacity: 1; 
-      transform: translateY(0); 
-    }
-  }
-
-  /* Animation Classes */
-  .animate-flame-dance { animation: flame-dance 4s ease-in-out infinite; }
-  .animate-blade-slash { animation: blade-slash 0.8s ease-out; }
-  .animate-mystical-pulse { animation: mystical-pulse 2s ease-in-out infinite; }
-  .animate-ember-float { animation: ember-float 3s linear infinite; }
-  .animate-scroll-reveal { animation: scroll-reveal 0.6s ease-out forwards; }
-
-  /* Hover Effects */
-  .hover-blade { transition: var(--transition-blade); }
-  .hover-blade:hover { 
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 10px 30px hsl(var(--primary) / 0.3);
-  }
-
-  .hover-glow:hover {
-    box-shadow: 0 0 30px hsl(var(--primary) / 0.4);
-    text-shadow: 0 0 10px hsl(var(--primary) / 0.6);
-  }
-}
-
-img {
-  height: 2.5rem; /* equivalent to h-10 */
-  width: auto;    /* equivalent to w-auto */
 }
