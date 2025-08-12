@@ -86,7 +86,7 @@ const About = () => {
                             <div className="relative z-10 transform group-hover:-translate-y-2 transition-transform duration-300">
                                 <div className="relative overflow-hidden rounded-xl group-hover:scale-105 transition-transform duration-500">
                                     <img
-                                        src="public/hackathon logo.png"
+                                        src="hackathon logo.png"
                                         alt="Code Slayer Hackathon"
                                         className="w-full h-auto object-contain max-h-96 group-hover:scale-110 transition-transform duration-700 drop-shadow-2xl"
                                     />
