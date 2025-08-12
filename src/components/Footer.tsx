@@ -3,8 +3,18 @@ import { Sword, MessageCircle, MapPin, Mail, Phone } from "lucide-react";
 
 const Footer = () => {
     return (
-        <footer className="bg-card/80 backdrop-blur-md py-16 px-4 border-t border-border">
-            <div className="max-w-6xl mx-auto">
+        <footer className="relative bg-card/80 backdrop-blur-md py-16 px-4 border-t border-border">
+            {/* Background Image */}
+            <div className="absolute inset-0 z-0">
+                <img
+                    src="public/9.jpg"
+                    alt="Footer Background"
+                    className="w-full h-full object-cover opacity-20"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/80"></div>
+            </div>
+            
+            <div className="relative z-10 max-w-6xl mx-auto">
                 <div className="grid md:grid-cols-4 gap-8 mb-12">
                     <div className="text-center md:text-left">
                         <div className="flex items-center justify-center md:justify-start space-x-3 mb-6">
@@ -13,6 +23,15 @@ const Footer = () => {
                         </div>
                         <p className="text-muted-foreground mb-4">Forged in fire. Powered by code.</p>
                         <p className="text-sm text-muted-foreground">We are the battleground.</p>
+                        
+                        {/* Added Logo/Image */}
+                        <div className="mt-6 p-2 bg-card/50 rounded-lg border border-primary/20 inline-block">
+                            <img 
+                                src="/hackathon logo.png" 
+                                alt="Hackathon Logo" 
+                                className="h-24 w-auto object-contain"
+                            />
+                        </div>
                     </div>
 
                     <div>
@@ -69,12 +88,11 @@ const Footer = () => {
                             <MessageCircle className="mr-2 h-4 w-4" />
                             Connect Now
                         </Button>
-
                     </div>
                 </div>
-
-                <div className="border-t border-border pt-8 text-center">
-                    <p className="text-sm text-muted-foreground">© 2025 Code Slayer Hackathon. Built with ❤️ by Developer Team</p>
+                
+                <div className="text-center text-sm text-muted-foreground pt-8 border-t border-border/50">
+                    <p>© 2025 Code Slayer Hackathon. All rights reserved.</p>
                 </div>
             </div>
         </footer>

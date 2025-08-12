@@ -2,17 +2,13 @@ const Timeline = () => {
     return (
         <>
             <section id="timeline" className="relative py-20 px-4 overflow-hidden transition-all duration-700 ease-in-out">
-                {/* Video Background */}
+                {/* Image Background */}
                 <div className="absolute inset-0 w-full h-full">
-                    <video
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
+                    <img
+                        src="public/3.png"
+                        alt="Timeline Background"
                         className="absolute inset-0 w-full h-full object-cover"
-                    >
-                        <source src="/timeline section vid.mp4" type="video/mp4" />
-                    </video>
+                    />
                     {/* Dark overlay for better content readability */}
                     <div className="absolute inset-0 bg-black/70"></div>
                     {/* Gradient overlay for theme consistency */}

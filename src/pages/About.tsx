@@ -4,17 +4,13 @@ const About = () => {
     return (
         <>
             <section id="about" className="relative py-20 px-4 overflow-hidden transition-all duration-700 ease-in-out">
-                {/* Video Background */}
+                {/* Image Background */}
                 <div className="absolute inset-0 w-full h-full">
-                    <video
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
+                    <img
+                        src="public/2.jpg" 
+                        alt="About Background"
                         className="absolute inset-0 w-full h-full object-cover"
-                    >
-                        <source src="/about section vid.mp4" type="video/mp4" />
-                    </video>
+                    />
                     {/* Dark overlay for better content readability */}
                     <div className="absolute inset-0 bg-black/60"></div>
                     {/* Gradient overlay for theme consistency */}
@@ -90,7 +86,7 @@ const About = () => {
                             <div className="relative z-10 transform group-hover:-translate-y-2 transition-transform duration-300">
                                 <div className="relative overflow-hidden rounded-xl group-hover:scale-105 transition-transform duration-500">
                                     <img
-                                        src="C:/Users/ISHAAN/OneDrive/Desktop/CLASSROOM/codeslayerlogo.jpeg"
+                                        src="public/hackathon logo.png"
                                         alt="Code Slayer Hackathon"
                                         className="w-full h-auto object-contain max-h-96 group-hover:scale-110 transition-transform duration-700 drop-shadow-2xl"
                                     />

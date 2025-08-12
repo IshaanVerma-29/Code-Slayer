@@ -4,17 +4,14 @@ const Tracks = () => {
     return (
         <>
             <section id="tracks" className="relative py-20 px-4 overflow-hidden transition-all duration-700 ease-in-out">
-                {/* Video Background */}
+                {/* Image Background (replaced video) */}
                 <div className="absolute inset-0 w-full h-full">
-                    <video
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        className="absolute inset-0 w-full h-full object-cover"
-                    >
-                        <source src="/track section vid.mp4" type="video/mp4" />
-                    </video>
+                    <img
+                        src="/5.jpg" 
+                        alt="Tracks Background"
+                        className="absolute inset-0 w-full h-full object-cover object-center md:object-center"
+                        loading="lazy"
+                    />
                     {/* Dark overlay for better content readability */}
                     <div className="absolute inset-0 bg-black/65"></div>
                     {/* Gradient overlay for theme consistency */}
