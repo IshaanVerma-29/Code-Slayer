@@ -5,7 +5,7 @@ const Timeline = () => {
                 {/* Image Background */}
                 <div className="absolute inset-0 w-full h-full">
                     <img
-                        src="public/3.png"
+                        src="/3.png"
                         alt="Timeline Background"
                         className="absolute inset-0 w-full h-full object-cover"
                     />

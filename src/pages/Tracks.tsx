@@ -7,7 +7,7 @@ const Tracks = () => {
                 {/* Image Background (replaced video) */}
                 <div className="absolute inset-0 w-full h-full">
                     <img
-                        src="/5.jpg" 
+                        src="/4.jpg" 
                         alt="Tracks Background"
                         className="absolute inset-0 w-full h-full object-cover object-center md:object-center"
                         loading="lazy"

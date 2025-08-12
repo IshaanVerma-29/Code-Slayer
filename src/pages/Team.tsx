@@ -32,7 +32,7 @@ const Team = () => {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="public/7.png"
+                        src="/7.png"
                         alt="Team Background"
                         className="w-full h-full object-cover"
                     />

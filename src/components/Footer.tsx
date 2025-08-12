@@ -7,7 +7,7 @@ const Footer = () => {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="public/9.jpg"
+                    src="/9.jpg"
                     alt="Footer Background"
                     className="w-full h-full object-cover opacity-20"
                 />

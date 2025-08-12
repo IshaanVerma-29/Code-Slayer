@@ -7,7 +7,7 @@ const About = () => {
                 {/* Image Background */}
                 <div className="absolute inset-0 w-full h-full">
                     <img
-                        src="public/2.jpg" 
+                        src="/2.jpg" 
                         alt="About Background"
                         className="absolute inset-0 w-full h-full object-cover"
                     />

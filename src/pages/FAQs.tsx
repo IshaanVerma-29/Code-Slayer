@@ -43,7 +43,7 @@ const FAQs = () => {
                 {/* Image Background */}
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="public/8.jpg"
+                        src="/8.jpg"
                         alt="FAQs Background"
                         className="w-full h-full object-cover"
                     />

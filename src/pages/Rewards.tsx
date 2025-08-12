@@ -8,7 +8,7 @@ const Rewards = () => {
                 {/* Image Background (replaced video) */}
                 <div className="absolute inset-0 w-full h-full">
                     <img
-                        src="public/5.jpg" 
+                        src="/5.jpg" 
                         alt="Rewards Background"
                         className="absolute inset-0 w-full h-full object-cover"
                     />
