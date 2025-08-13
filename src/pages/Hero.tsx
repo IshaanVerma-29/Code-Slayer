@@ -38,7 +38,7 @@ const Hero = () => {
                     </span>
                 </h2>
                 <p className="text-base xs:text-lg sm:text-xl mb-6 sm:mb-8 text-gray-200 max-w-md sm:max-w-2xl mx-auto animate-scroll-reveal drop-shadow-md">
-                    Unleash your coding prowess in the ultimate Web3 hackathon. Build, innovate, and claim your place among the legends.
+                    Unleash your coding prowess in the ultimate hackathon. Build, innovate, and claim your place among the legends.
                     <span className="block text-xs xs:text-sm sm:text-base mt-1 text-gray-200/80">
                         究極のWeb3ハッカソンであなたのコーディング力を解き放とう。創造し、革新し、伝説の中に自分の居場所を掴め。
                     </span>

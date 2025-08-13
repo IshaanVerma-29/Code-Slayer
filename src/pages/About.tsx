@@ -7,7 +7,7 @@ const About = () => {
                 {/* Image Background */}
                 <div className="absolute inset-0 w-full h-full">
                     <img
-                        src="/2.jpg" 
+                        src="https://res.cloudinary.com/drr3xypxn/image/upload/v1755089312/2_t5rwsh.jpg" 
                         alt="About Background"
                         className="absolute inset-0 w-full h-full object-cover"
                     />
@@ -67,7 +67,7 @@ const About = () => {
                                         </div>
                                         <div className="space-y-2">
                                             <h4 className="font-semibold text-primary drop-shadow-md">Prizes</h4>
-                                            <p className="drop-shadow-sm">₹15,000+ Prize Pool</p>
+                                            <p className="drop-shadow-sm">₹30,000+ Prize Pool</p>
                                         </div>
                                     </div>
 
@@ -86,7 +86,7 @@ const About = () => {
                             <div className="relative z-10 transform group-hover:-translate-y-2 transition-transform duration-300">
                                 <div className="relative overflow-hidden rounded-xl group-hover:scale-105 transition-transform duration-500">
                                     <img
-                                        src="hackathon logo.png"
+                                        src="https://res.cloudinary.com/drr3xypxn/image/upload/v1755088263/hackathon_logo_wntusi.png"
                                         alt="Code Slayer Hackathon"
                                         className="w-full h-auto object-contain max-h-96 group-hover:scale-110 transition-transform duration-700 drop-shadow-2xl"
                                     />

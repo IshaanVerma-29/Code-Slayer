@@ -7,7 +7,7 @@ const Tracks = () => {
                 {/* Image Background (replaced video) */}
                 <div className="absolute inset-0 w-full h-full">
                     <img
-                        src="/4.jpg" 
+                        src="https://res.cloudinary.com/drr3xypxn/image/upload/v1755089328/4_lrmplt.jpg"
                         alt="Tracks Background"
                         className="absolute inset-0 w-full h-full object-cover object-center md:object-center"
                         loading="lazy"
@@ -36,7 +36,7 @@ const Tracks = () => {
                         </div>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
                         {/* Health Tech */}
                         <Card className="group relative overflow-hidden bg-card/90 backdrop-blur-md border-4 border-pink-200/50 hover:border-pink-400/70 transition-all duration-500 cursor-blade hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/40 rounded-2xl hover:rotate-1 hover:bg-card/95">
                             <div className="absolute inset-0 bg-gradient-to-br from-pink-500/15 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -49,7 +49,7 @@ const Tracks = () => {
                             <div className="relative p-8 pt-16 text-center z-10 transform group-hover:-translate-y-2 transition-transform duration-300">
                                 <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-pink-100/30 backdrop-blur-sm border border-pink-200/60 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300 group-hover:shadow-lg group-hover:shadow-pink-500/30 overflow-hidden">
                                     <img
-                                        src="/healthcare.png"
+                                        src="https://res.cloudinary.com/drr3xypxn/image/upload/v1755088259/healthcare_jr6luo.png"
                                         alt="Healthcare Technology"
                                         className="w-16 h-16 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-lg"
                                     />
@@ -71,7 +71,7 @@ const Tracks = () => {
                             <div className="relative p-8 pt-16 text-center z-10 transform group-hover:-translate-y-2 transition-transform duration-300">
                                 <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-purple-100/30 backdrop-blur-sm border border-purple-200/60 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300 group-hover:shadow-lg group-hover:shadow-purple-500/30 overflow-hidden">
                                     <img
-                                        src="/ai ml.png"
+                                        src="https://res.cloudinary.com/drr3xypxn/image/upload/v1755088229/ai_ml_cdzka6.png"
                                         alt="AI & Machine Learning"
                                         className="w-16 h-16 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-lg"
                                     />
@@ -93,7 +93,7 @@ const Tracks = () => {
                             <div className="relative p-8 pt-16 text-center z-10 transform group-hover:-translate-y-2 transition-transform duration-300">
                                 <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-blue-100/30 backdrop-blur-sm border border-blue-200/60 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300 group-hover:shadow-lg group-hover:shadow-blue-500/30 overflow-hidden">
                                     <img
-                                        src="/web3.png"
+                                        src="https://res.cloudinary.com/drr3xypxn/image/upload/v1755088246/web3_nl27wu.png"
                                         alt="Web3 Development"
                                         className="w-16 h-16 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-lg"
                                     />
@@ -103,6 +103,8 @@ const Tracks = () => {
                             </div>
                         </Card>
 
+                    </div>
+                    <div className="flex flex-wrap justify-center items-center gap-8 mt-8 w-full">
                         {/* Open Innovation */}
                         <Card className="group relative overflow-hidden bg-card/90 backdrop-blur-md border-4 border-orange-200/50 hover:border-orange-400/70 transition-all duration-500 cursor-blade hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/40 rounded-2xl hover:-rotate-1 hover:bg-card/95">
                             <div className="absolute inset-0 bg-gradient-to-br from-orange-500/15 to-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -115,7 +117,7 @@ const Tracks = () => {
                             <div className="relative p-8 pt-16 text-center z-10 transform group-hover:-translate-y-2 transition-transform duration-300">
                                 <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-orange-100/30 backdrop-blur-sm border border-orange-200/60 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300 group-hover:shadow-lg group-hover:shadow-orange-500/30 overflow-hidden">
                                     <img
-                                        src="/open innovation.png"
+                                        src="https://res.cloudinary.com/drr3xypxn/image/upload/v1755088260/open_innovation_vfestc.png"
                                         alt="Open Innovation"
                                         className="w-16 h-16 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-lg"
                                     />
@@ -137,7 +139,7 @@ const Tracks = () => {
                             <div className="relative p-8 pt-16 text-center z-10 transform group-hover:-translate-y-2 transition-transform duration-300">
                                 <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-green-100/30 backdrop-blur-sm border border-green-200/60 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300 group-hover:shadow-lg group-hover:shadow-green-500/30 overflow-hidden">
                                     <img
-                                        src="/sustainability.png"
+                                        src="https://res.cloudinary.com/drr3xypxn/image/upload/v1755088234/sustainability_porhao.png"
                                         alt="Sustainability"
                                         className="w-16 h-16 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-lg"
                                     />

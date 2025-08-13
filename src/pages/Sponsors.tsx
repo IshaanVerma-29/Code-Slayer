@@ -7,7 +7,7 @@ const Sponsors = () => {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/6.jpg"
+                        src="https://res.cloudinary.com/drr3xypxn/image/upload/v1755089344/6_e2p4iq.jpg"
                         alt="Sponsor Background"
                         className="w-full h-full object-cover"
                     />

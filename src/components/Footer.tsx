@@ -19,7 +19,7 @@ const Footer = () => {
                     <div className="text-center md:text-left">
                         <div className="flex items-center justify-center md:justify-start space-x-3 mb-6">
                             <Sword className="h-8 w-8 text-primary animate-mystical-pulse" />
-                            <span className="font-cinzel font-bold text-2xl demon-text" data-text="Devsphere">Devsphere</span>
+                            <span className="font-cinzel font-bold text-2xl demon-text" data-text="DEVSPHEREINDIA">DEVSPHEREINDIA</span>
                         </div>
                         <p className="text-muted-foreground mb-4">Forged in fire. Powered by code.</p>
                         <p className="text-sm text-muted-foreground">We are the battleground.</p>
@@ -27,7 +27,7 @@ const Footer = () => {
                         {/* Added Logo/Image */}
                         <div className="mt-6 p-2 bg-card/50 rounded-lg border border-primary/20 inline-block">
                             <img 
-                                src="/hackathon logo.png" 
+                                src="https://res.cloudinary.com/drr3xypxn/image/upload/v1755088263/hackathon_logo_wntusi.png" 
                                 alt="Hackathon Logo" 
                                 className="h-24 w-auto object-contain"
                             />

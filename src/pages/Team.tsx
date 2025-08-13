@@ -6,21 +6,21 @@ const Team = () => {
         {
             name: "Nisha Kumari",
             linkedin: "http://www.linkedin.com/in/nisha-kumari-4588b1303",
-            image: "/teams/nisha.jpg",
+            image: "https://res.cloudinary.com/drr3xypxn/image/upload/v1755087931/Nisha_kumari_i5wr3f.jpg",
             role: <>Founder</>,
             color: "green"
         },
         {
             name: "Arabhay Aggarwal",
             linkedin: "https://www.linkedin.com/in/arabhay-agrawal-891013372",
-            image: "/teams/arabhay.jpg",
+            image: "https://res.cloudinary.com/drr3xypxn/image/upload/v1755088224/Arabhay_Agrawal_xlcfcf.jpg",
             role: <>Founder</>,
             color: "teal"
         },
         {
             name: "Nitin Sengar",
             linkedin: "https://www.linkedin.com/in/contactnitinsengar/",
-            image: "/teams/nitin.jpg",
+            image: "https://res.cloudinary.com/drr3xypxn/image/upload/v1755088228/Nitin_Sengar_bnxbte.jpg",
             role: <>Community Manager</>,
             color: "green"
         }
@@ -66,7 +66,7 @@ const Team = () => {
                                                     <img
                                                         src={member.image}
                                                         alt={member.name}
-                                                        className="w-full h-full object-cover"
+                                                        className="w-full h-full object-top"
                                                     />
                                                 </div>
                                                 <div className={`absolute -bottom-2 -right-2 w-10 h-10 ${member.color === 'green' ? 'bg-green-500' : 'bg-teal-500'} rounded-full flex items-center justify-center shadow-lg`}>

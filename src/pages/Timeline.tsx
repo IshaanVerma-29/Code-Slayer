@@ -5,7 +5,7 @@ const Timeline = () => {
                 {/* Image Background */}
                 <div className="absolute inset-0 w-full h-full">
                     <img
-                        src="/3.png"
+                        src="https://res.cloudinary.com/drr3xypxn/image/upload/v1755089315/3_a3nsse.png"
                         alt="Timeline Background"
                         className="absolute inset-0 w-full h-full object-cover"
                     />

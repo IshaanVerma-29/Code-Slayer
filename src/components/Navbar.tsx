@@ -21,16 +21,16 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo Section */}
-          <div className="flex items-center space-x-3 group">
-            <div className="relative">
+          <div className="flex items-center space-x-3 group pr-5">
+            <div className="relative pr-5">
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-300 blur-md"></div>
               <img
-                src="/hackathon logo.png"
+                src="https://res.cloudinary.com/drr3xypxn/image/upload/v1755088263/hackathon_logo_wntusi.png"
                 alt="Code Slayer Hackathon Logo"
                 className="relative h-12 w-12 object-contain animate-mystical-pulse group-hover:scale-110 transition-transform duration-300"
               />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col pr-10">
               <span className="font-cinzel font-bold text-2xl bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                 Code Slayer Hackathon
               </span>
@@ -56,7 +56,7 @@ const Navbar = () => {
           </div>
 
           {/* Contact Button */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-4 pl-10">
             <Button
               className="relative overflow-hidden bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white font-semibold px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/30 cursor-blade group"
               onClick={() => window.open('https://chat.whatsapp.com/E28GNRJEjxrGOwZJoAy5bB', '_blank')}
