@@ -9,7 +9,7 @@ const Footer = () => {
                 <img
                     src="/9.jpg"
                     alt="Footer Background"
-                    className="w-full h-full object-cover opacity-20"
+                    className="w-full h-full object-cover opacity-100"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/80"></div>
             </div>

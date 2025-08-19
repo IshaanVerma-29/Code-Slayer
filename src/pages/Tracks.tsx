@@ -103,30 +103,6 @@ const Tracks = () => {
                             </div>
                         </Card>
 
-                    </div>
-                    <div className="flex flex-wrap justify-center items-center gap-8 mt-8 w-full">
-                        {/* Open Innovation */}
-                        <Card className="group relative overflow-hidden bg-card/90 backdrop-blur-md border-4 border-orange-200/50 hover:border-orange-400/70 transition-all duration-500 cursor-blade hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/40 rounded-2xl hover:-rotate-1 hover:bg-card/95">
-                            <div className="absolute inset-0 bg-gradient-to-br from-orange-500/15 to-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                            <div className="absolute inset-0 bg-gradient-to-t from-orange-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                            <div className="absolute top-4 left-4 z-10">
-                                <div className="w-8 h-8 bg-orange-100/90 backdrop-blur-sm rounded-lg flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 shadow-lg">
-                                    <span className="text-orange-500 font-bold drop-shadow-sm">→</span>
-                                </div>
-                            </div>
-                            <div className="relative p-8 pt-16 text-center z-10 transform group-hover:-translate-y-2 transition-transform duration-300">
-                                <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-orange-100/30 backdrop-blur-sm border border-orange-200/60 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300 group-hover:shadow-lg group-hover:shadow-orange-500/30 overflow-hidden">
-                                    <img
-                                        src="https://res.cloudinary.com/drr3xypxn/image/upload/v1755088260/open_innovation_vfestc.png"
-                                        alt="Open Innovation"
-                                        className="w-16 h-16 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-lg"
-                                    />
-                                </div>
-                                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-orange-400 transition-colors duration-300 drop-shadow-lg">Open Innovation</h3>
-                                <p className="text-gray-200 text-sm leading-relaxed group-hover:text-white transition-colors duration-300 drop-shadow-md">Create groundbreaking solutions across any domain with unlimited creativity.</p>
-                            </div>
-                        </Card>
-
                         {/* Sustainability */}
                         <Card className="group relative overflow-hidden bg-card/90 backdrop-blur-md border-4 border-green-200/50 hover:border-green-400/70 transition-all duration-500 cursor-blade hover:scale-105 hover:shadow-2xl hover:shadow-green-500/40 rounded-2xl hover:rotate-1 hover:bg-card/95">
                             <div className="absolute inset-0 bg-gradient-to-br from-green-500/15 to-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -146,6 +122,50 @@ const Tracks = () => {
                                 </div>
                                 <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-green-400 transition-colors duration-300 drop-shadow-lg">Sustainability</h3>
                                 <p className="text-gray-200 text-sm leading-relaxed group-hover:text-white transition-colors duration-300 drop-shadow-md">Innovate for a greener future: energy, environment, and sustainable solutions.</p>
+                            </div>
+                        </Card>
+
+                        {/* Internet of Things */}
+                        <Card className="group relative overflow-hidden bg-card/90 backdrop-blur-md border-4 border-green-200/50 hover:border-cyan-400/70 transition-all duration-500 cursor-blade hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/40 rounded-2xl hover:rotate-1 hover:bg-card/95">
+                            <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/15 to-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            <div className="absolute inset-0 bg-gradient-to-t from-cyan-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                            <div className="absolute top-4 left-4 z-10">
+                                <div className="w-8 h-8 bg-cyan-100/90 backdrop-blur-sm rounded-lg flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 shadow-lg">
+                                    <span className="text-cyan-500 font-bold drop-shadow-sm">→</span>
+                                </div>
+                            </div>
+                            <div className="relative p-8 pt-16 text-center z-10 transform group-hover:-translate-y-2 transition-transform duration-300">
+                                <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-cyan-100/30 backdrop-blur-sm border border-cyan-200/60 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300 group-hover:shadow-lg group-hover:shadow-cyan-500/30 overflow-hidden">
+                                    <img
+                                        src="/IoT image.png"
+                                        alt="Internet of Things"
+                                        className="w-16 h-16 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-lg"
+                                    />
+                                </div>
+                                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-cyan-400 transition-colors duration-300 drop-shadow-lg">Internet of Things</h3>
+                                <p className="text-gray-200 text-sm leading-relaxed group-hover:text-white transition-colors duration-300 drop-shadow-md">Connect devices, analyze data, and build intelligent systems that bridge the physical and digital worlds.</p>
+                            </div>
+                        </Card>
+
+                        {/* Open Innovation */}
+                        <Card className="group relative overflow-hidden bg-card/90 backdrop-blur-md border-4 border-orange-200/50 hover:border-orange-400/70 transition-all duration-500 cursor-blade hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/40 rounded-2xl hover:-rotate-1 hover:bg-card/95">
+                            <div className="absolute inset-0 bg-gradient-to-br from-orange-500/15 to-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            <div className="absolute inset-0 bg-gradient-to-t from-orange-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                            <div className="absolute top-4 left-4 z-10">
+                                <div className="w-8 h-8 bg-orange-100/90 backdrop-blur-sm rounded-lg flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 shadow-lg">
+                                    <span className="text-orange-500 font-bold drop-shadow-sm">→</span>
+                                </div>
+                            </div>
+                            <div className="relative p-8 pt-16 text-center z-10 transform group-hover:-translate-y-2 transition-transform duration-300">
+                                <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-orange-100/30 backdrop-blur-sm border border-orange-200/60 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300 group-hover:shadow-lg group-hover:shadow-orange-500/30 overflow-hidden">
+                                    <img
+                                        src="https://res.cloudinary.com/drr3xypxn/image/upload/v1755088260/open_innovation_vfestc.png"
+                                        alt="Open Innovation"
+                                        className="w-16 h-16 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-lg"
+                                    />
+                                </div>
+                                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-orange-400 transition-colors duration-300 drop-shadow-lg">Open Innovation</h3>
+                                <p className="text-gray-200 text-sm leading-relaxed group-hover:text-white transition-colors duration-300 drop-shadow-md">Create groundbreaking solutions across any domain with unlimited creativity.</p>
                             </div>
                         </Card>
                     </div>
