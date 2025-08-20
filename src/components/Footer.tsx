@@ -36,7 +36,7 @@ const Footer = () => {
               {/* Added Logo/Image */}
               <div className="mt-6 p-2 bg-card/50 rounded-lg border border-primary/20 inline-block">
                 <img
-                  src="https://res.cloudinary.com/drr3xypxn/image/upload/v1755088263/hackathon_logo_wntusi.png"
+                  src="https://res.cloudinary.com/drr3xypxn/image/upload/v1755663220/logo_thgntd.jpg"
                   alt="Hackathon Logo"
                   className="h-24 w-auto object-contain"
                 />

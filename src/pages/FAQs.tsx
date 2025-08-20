@@ -40,23 +40,19 @@ const FAQs = () => {
     return (
         <>
             <section id="faqs" className="relative py-20 px-4 overflow-hidden transition-all duration-700 ease-in-out">
-                {/* Background Video */}
+                {/* Background Image */}
                 <div className="absolute inset-0 z-0">
-                    <video
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
+                    <img
+                        src="https://res.cloudinary.com/drr3xypxn/image/upload/v1755089318/8_ulejhr.jpg"
+                        alt="Team Background"
                         className="w-full h-full object-cover"
-                    >
-                        <source src="/faq section vid.mp4" type="video/mp4" />
-                    </video>
+                    />
                     <div className="absolute inset-0 bg-black/70"></div>
                     <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/50"></div>
                 </div>
 
                 <div className="relative z-10 max-w-4xl mx-auto">
-                    <h2 className="text-4xl font-cinzel font-bold text-center mb-16 demon-text drop-shadow-lg">
+                    <h2 className="text-4xl font-cinzel font-bold text-center mb-6 demon-text drop-shadow-lg flex flex-col items-center">
                         Frequently Asked Questions
                         <div
                             className="text-base mt-2 text-gray-300"

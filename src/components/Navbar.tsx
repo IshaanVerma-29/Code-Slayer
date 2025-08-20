@@ -6,7 +6,6 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "HOME", href: "#home" },
     { name: "ABOUT", href: "#about" },
     { name: "TIMELINE", href: "#timeline" },
     { name: "TRACKS", href: "#tracks" },
@@ -26,16 +25,15 @@ const Navbar = () => {
             <div className="relative pr-5">
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-300 blur-md"></div>
               <img
-                src="https://res.cloudinary.com/drr3xypxn/image/upload/v1755088263/hackathon_logo_wntusi.png"
+                src="https://res.cloudinary.com/drr3xypxn/image/upload/v1755663220/logo_thgntd.jpg"
                 alt="Code Slayer Hackathon Logo"
-                className="relative h-12 w-12 object-contain animate-mystical-pulse group-hover:scale-110 transition-transform duration-300"
+                className="relative h-16 w-16 object-contain animate-mystical-pulse group-hover:scale-110 transition-transform duration-300"
               />
             </div>
             <div className="flex flex-col pr-10">
               <span className="font-cinzel font-bold text-2xl bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                 Code Slayer Hackathon
               </span>
-
             </div>
           </div>
 
