@@ -14,6 +14,7 @@ const Navbar = () => {
     { name: "SPONSORS", href: "#sponsors" },
     { name: "TEAM", href: "#team" },
     { name: "FAQS", href: "#faqs" },
+    { name: "SWAG", href: "https://codeslayerbadge.netlify.app/" },
   ];
 
   return (

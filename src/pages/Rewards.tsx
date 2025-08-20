@@ -58,7 +58,7 @@ const Rewards = () => {
                                         </div>
                                         <h4 className="text-1xl font-bold mb-3 text-yellow-400 group-hover:text-yellow-300 transition-colors duration-300 drop-shadow-lg">Sun Breathing Master</h4>
                                         <p className="text-sm text-gray-300 mb-6 group-hover:text-white transition-colors duration-300 drop-shadow-md">OF CODE SLAYER HACKATHON 2K25</p>
-                                        <div className="text-5xl font-bold text-white group-hover:scale-110 transition-transform duration-300 drop-shadow-xl">₹15,000</div>
+                                        <div className="text-5xl font-bold text-white group-hover:scale-110 transition-transform duration-300 drop-shadow-xl"></div>
                                     </div>
 
                                     {/* Animated Elements */}
@@ -97,7 +97,7 @@ const Rewards = () => {
                                         </div>
                                         <h4 className="text-1xl font-bold mb-3 text-yellow-400 group-hover:text-yellow-300 transition-colors duration-300 drop-shadow-lg">Moon Breathing Adept</h4>
                                         <p className="text-sm text-gray-300 mb-6 group-hover:text-white transition-colors duration-300 drop-shadow-md">OF CODE SLAYER HACKATHON 2K25</p>
-                                        <div className="text-5xl font-bold text-white group-hover:scale-110 transition-transform duration-300 drop-shadow-xl">₹10,000</div>
+                                        <div className="text-5xl font-bold text-white group-hover:scale-110 transition-transform duration-300 drop-shadow-xl"></div>
                                     </div>
 
                                     {/* Animated Elements */}
@@ -136,7 +136,7 @@ const Rewards = () => {
                                         </div>
                                         <h4 className="text-1xl font-bold mb-3 text-yellow-400 group-hover:text-yellow-300 transition-colors duration-300 drop-shadow-lg">Beast Breathing Challenger</h4>
                                         <p className="text-sm text-gray-300 mb-6 group-hover:text-white transition-colors duration-300 drop-shadow-md">OF CODE SLAYER HACKATHON 2K25</p>
-                                        <div className="text-5xl font-bold text-white group-hover:scale-110 transition-transform duration-300 drop-shadow-xl">₹5,000</div>
+                                        <div className="text-5xl font-bold text-white group-hover:scale-110 transition-transform duration-300 drop-shadow-xl"></div>
                                     </div>
 
                                     {/* Animated Elements */}
