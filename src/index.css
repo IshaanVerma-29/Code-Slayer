@@ -78,113 +78,193 @@
     cursor: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4 28 L16 2 L28 28 L16 24 Z' fill='%23dc2626' stroke='%23991b1b' stroke-width='2'/%3e%3c/svg%3e"), auto;
   }
 
-  html {
-    scroll-behavior: smooth;
+  /* Shadecn-style Advanced Transitions */
+  @layer base {
+    /* Enhanced smooth scrolling with Shadecn standards */
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+    
+    /* Shadecn-style section transitions */
+    section {
+      opacity: 0;
+      transform: translateY(30px) scale(0.98);
+      transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform, opacity;
+    }
+    
+    section.in-view {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    
+    /* Staggered animations for child elements */
+    .stagger-children > * {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .in-view .stagger-children > * {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .in-view .stagger-children > *:nth-child(1) { transition-delay: 0.1s; }
+    .in-view .stagger-children > *:nth-child(2) { transition-delay: 0.2s; }
+    .in-view .stagger-children > *:nth-child(3) { transition-delay: 0.3s; }
+    .in-view .stagger-children > *:nth-child(4) { transition-delay: 0.4s; }
+    .in-view .stagger-children > *:nth-child(5) { transition-delay: 0.5s; }
   }
   
-  /* Enhanced smooth scrolling */
-  section {
-    opacity: 0.85;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  @layer components {
+    /* Shadecn-style card transitions */
+    .shadecn-card {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      transform: translateZ(0);
+    }
+    
+    .shadecn-card:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Smooth button transitions */
+    .shadecn-button {
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .shadecn-button::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: width 0.3s ease, height 0.3s ease;
+    }
+    
+    .shadecn-button:hover::before {
+      width: 300px;
+      height: 300px;
+    }
+    
+    /* Parallax background effects */
+    .parallax-bg {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: transform 0.1s ease-out;
+    }
+    
+    /* Fade-in animations */
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+    
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    /* Scale animations */
+    .scale-in {
+      opacity: 0;
+      transform: scale(0.9);
+      animation: scaleIn 0.5s ease-out forwards;
+    }
+    
+    @keyframes scaleIn {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+    /* Slide animations */
+    .slide-in-left {
+      opacity: 0;
+      transform: translateX(-30px);
+      animation: slideInLeft 0.6s ease-out forwards;
+    }
+    
+    @keyframes slideInLeft {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    .slide-in-right {
+      opacity: 0;
+      transform: translateX(30px);
+      animation: slideInRight 0.6s ease-out forwards;
+    }
+    
+    @keyframes slideInRight {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    /* Hover glow effects */
+    .hover-glow {
+      transition: box-shadow 0.3s ease;
+    }
+    
+    .hover-glow:hover {
+      box-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
+    }
+    
+    /* Loading shimmer effect */
+    .shimmer {
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+      background-size: 200% 100%;
+      animation: shimmer 2s infinite;
+    }
+    
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
   }
   
-  section:target, section.in-view {
-    opacity: 1;
-    transform: translateY(0);
+  /* Custom scrollbar with Shadecn styling */
+  ::-webkit-scrollbar {
+    width: 8px;
   }
   
-  /* Smooth section transitions */
-  section + section {
-    margin-top: -1px; /* Remove gaps between sections */
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
   }
   
-  /* Enhanced Heading Styles */
-  h1, h2, h3, h4, h5, h6 {
-    position: relative;
-    overflow: hidden;
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 4px;
+    transition: background 0.3s ease;
   }
   
-  /* Animated heading underline effect */
-  h2:after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background: var(--gradient-flame);
-    transition: all 0.5s ease;
-    transform: translateX(-50%);
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--accent));
   }
   
-  section:hover h2:after {
-    width: 100px;
-  }
-  
-  /* Enhanced demon text effect */
-  .demon-text {
-    background: var(--gradient-flame);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 0 15px rgba(255, 100, 50, 0.5);
-    position: relative;
-    display: inline-block;
-  }
-  
-  .demon-text:before {
-    content: attr(data-text);
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: var(--gradient-flame);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    filter: blur(8px);
-    opacity: 0.7;
-  }
-}
-
-@layer components {
-  /* Custom Sword Cursor Variants */
-  .cursor-sword {
-    cursor: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4 28 L16 2 L28 28 L16 24 Z' fill='%23dc2626' stroke='%23991b1b' stroke-width='2'/%3e%3c/svg%3e"), auto;
-  }
-
-  .cursor-blade:hover {
-    cursor: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4 28 L16 2 L28 28 L16 24 Z' fill='%23f97316' stroke='%23ea580c' stroke-width='2'/%3e%3c/svg%3e"), auto;
-  }
-  
-  /* Enhanced hover effects for all interactive elements */
-  a, button, .interactive {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    overflow: hidden;
-  }
-  
-  a:hover, button:hover, .interactive:hover {
-    transform: translateY(-2px);
-  }
-  
-  a:before, button:before, .interactive:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background: linear-gradient(to top, rgba(255,255,255,0.1), transparent);
-    transition: height 0.3s ease;
-    z-index: -1;
-  }
-  
-  a:hover:before, button:hover:before, .interactive:hover:before {
-    height: 100%;
+  /* Enhanced focus states */
+  *:focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+    transition: outline 0.2s ease;
   }
   
   /* Enhanced card hover effects */

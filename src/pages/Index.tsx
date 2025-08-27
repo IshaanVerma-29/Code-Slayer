@@ -12,44 +12,55 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   useEffect(() => {
-    // Function to check if an element is in viewport
-    const isInViewport = (element: Element) => {
-      const rect = element.getBoundingClientRect();
-      return (
-        rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.75 &&
-        rect.bottom >= 0
-      );
+    // Enhanced intersection observer for Shadecn-style animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
     };
 
-    // Function to handle scroll events
-    const handleScroll = () => {
-      document.querySelectorAll('section').forEach(section => {
-        if (isInViewport(section)) {
-          section.classList.add('in-view');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          
+          // Add stagger animation to children
+          const children = entry.target.querySelectorAll('.stagger-item');
+          children.forEach((child, index) => {
+            setTimeout(() => {
+              child.classList.add('fade-in-up');
+            }, index * 100);
+          });
         }
       });
-    };
+    }, observerOptions);
 
-    // Add scroll event listener
-    window.addEventListener('scroll', handleScroll);
-    // Initial check
-    handleScroll();
+    // Observe all sections
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
+
+    // Add smooth scroll behavior
+    document.documentElement.style.scrollBehavior = 'smooth';
 
     // Cleanup
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
   return (
     <div className="min-h-screen bg-background cursor-sword">
       <Navbar />
-      <Hero />
-      <About />
-      <Timeline />
-      <Tracks />
-      <Rewards />
-      <Sponsors />
-      <Team />
-      <FAQs />
+      <main>
+        <Hero />
+        <About />
+        <Timeline />
+        <Tracks />
+        <Rewards />
+        <Sponsors />
+        <Team />
+        <FAQs />
+      </main>
       <Footer />
     </div>
   );
