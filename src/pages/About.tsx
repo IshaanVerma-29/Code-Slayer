@@ -55,17 +55,16 @@ const About = () => {
                                     <div className="grid grid-cols-2 gap-6">
                                         <div className="space-y-2">
                                             <h4 className="font-semibold text-primary drop-shadow-md">Duration</h4>
-                                                                                  git clone https://github.com/IshaanVerma-29/Code-Slayer.git
-                                           
+                                            <p className="drop-shadow-sm">36 Hours of Intense Coding</p>
                                         </div>
                                         <div className="space-y-2">
                                             <h4 className="font-semibold text-primary drop-shadow-md">Tracks</h4>
                                             <p className="drop-shadow-sm">5 Exciting Categories</p>
                                         </div>
-                                        <div className="space-y-2">
+                                        {/* <div className="space-y-2">
                                             <h4 className="font-semibold text-primary drop-shadow-md">Prizes</h4>
                                             <p className="drop-shadow-sm">₹30,000+ Prize Pool</p>
-                                        </div>
+                                        </div> */}
                                     </div>
 
                                     <p className="text-lg leading-relaxed drop-shadow-md">
