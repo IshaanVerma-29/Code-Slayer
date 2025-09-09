@@ -129,7 +129,7 @@ const Rewards = () => {
                                         </div>
                                         <h4 className="text-1xl font-bold mb-3 text-purple-400 group-hover:text-purple-300 transition-colors duration-300 drop-shadow-lg">Creative Vision</h4>
                                         <p className="text-sm text-gray-300 mb-6 group-hover:text-white transition-colors duration-300 drop-shadow-md">EXCEPTIONAL USER EXPERIENCE</p>
-                                        <div className="text-3xl font-bold text-white group-hover:scale-110 transition-transform duration-300 drop-shadow-xl">₹5,000</div>
+                                        {/* <div className="text-3xl font-bold text-white group-hover:scale-110 transition-transform duration-300 drop-shadow-xl">₹5,000</div> */}
                                     </div>
                                 </Card>
                             </div>
@@ -152,7 +152,7 @@ const Rewards = () => {
                                         </div>
                                         <h4 className="text-1xl font-bold mb-3 text-cyan-400 group-hover:text-cyan-300 transition-colors duration-300 drop-shadow-lg">Tech Pioneer</h4>
                                         <p className="text-sm text-gray-300 mb-6 group-hover:text-white transition-colors duration-300 drop-shadow-md">BREAKTHROUGH TECHNOLOGY</p>
-                                        <div className="text-3xl font-bold text-white group-hover:scale-110 transition-transform duration-300 drop-shadow-xl">₹5,000</div>
+                                        {/* <div className="text-3xl font-bold text-white group-hover:scale-110 transition-transform duration-300 drop-shadow-xl">₹5,000</div> */}
                                     </div>
                                 </Card>
                             </div>
@@ -175,7 +175,7 @@ const Rewards = () => {
                                         </div>
                                         <h4 className="text-1xl font-bold mb-3 text-green-400 group-hover:text-green-300 transition-colors duration-300 drop-shadow-lg">Storyteller</h4>
                                         <p className="text-sm text-gray-300 mb-6 group-hover:text-white transition-colors duration-300 drop-shadow-md">COMPELLING PITCH & DEMO</p>
-                                        <div className="text-3xl font-bold text-white group-hover:scale-110 transition-transform duration-300 drop-shadow-xl">₹5,000</div>
+                                        {/* <div className="text-3xl font-bold text-white group-hover:scale-110 transition-transform duration-300 drop-shadow-xl">₹5,000</div> */}
                                     </div>
                                 </Card>
                             </div>
@@ -198,7 +198,7 @@ const Rewards = () => {
                                         </div>
                                         <h4 className="text-1xl font-bold mb-3 text-red-400 group-hover:text-red-300 transition-colors duration-300 drop-shadow-lg">Community Favorite</h4>
                                         <p className="text-sm text-gray-300 mb-6 group-hover:text-white transition-colors duration-300 drop-shadow-md">VOTED BY PARTICIPANTS</p>
-                                        <div className="text-3xl font-bold text-white group-hover:scale-110 transition-transform duration-300 drop-shadow-xl">₹3,000</div>
+                                        {/* <div className="text-3xl font-bold text-white group-hover:scale-110 transition-transform duration-300 drop-shadow-xl">₹3,000</div> */}
                                     </div>
                                 </Card>
                             </div>
@@ -221,7 +221,7 @@ const Rewards = () => {
                                         </div>
                                         <h4 className="text-1xl font-bold mb-3 text-orange-400 group-hover:text-orange-300 transition-colors duration-300 drop-shadow-lg">Rising Star</h4>
                                         <p className="text-sm text-gray-300 mb-6 group-hover:text-white transition-colors duration-300 drop-shadow-md">FIRST-TIME HACKERS</p>
-                                        <div className="text-3xl font-bold text-white group-hover:scale-110 transition-transform duration-300 drop-shadow-xl">₹3,000</div>
+                                        {/* <div className="text-3xl font-bold text-white group-hover:scale-110 transition-transform duration-300 drop-shadow-xl">₹3,000</div> */}
                                     </div>
                                 </Card>
                             </div>
@@ -244,7 +244,7 @@ const Rewards = () => {
                                         </div>
                                         <h4 className="text-1xl font-bold mb-3 text-indigo-400 group-hover:text-indigo-300 transition-colors duration-300 drop-shadow-lg">AI Champion</h4>
                                         <p className="text-sm text-gray-300 mb-6 group-hover:text-white transition-colors duration-300 drop-shadow-md">ARTIFICIAL INTELLIGENCE</p>
-                                        <div className="text-3xl font-bold text-white group-hover:scale-110 transition-transform duration-300 drop-shadow-xl">₹5,000</div>
+                                        {/* <div className="text-3xl font-bold text-white group-hover:scale-110 transition-transform duration-300 drop-shadow-xl">₹5,000</div> */}
                                     </div>
                                 </Card>
                             </div>

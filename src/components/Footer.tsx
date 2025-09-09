@@ -139,7 +139,7 @@ const Footer = () => {
                 Swag Badge Generator
               </h4>
               <a
-                href="https://codeslayerbadge.netlify.app/"
+                href="/batch-generator"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"

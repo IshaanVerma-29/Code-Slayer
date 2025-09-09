@@ -13,8 +13,7 @@ const Navbar: React.FC = () => {
 
   // Keep section anchors that scroll on the same page
   const navItems: NavItem[] = [
-    { name: "HOME", href: "#home" },
-  const navItems = [
+    // { name: "HOME", href: "#home" },
     { name: "ABOUT", href: "#about" },
     { name: "TIMELINE", href: "#timeline" },
     { name: "TRACKS", href: "#tracks" },
@@ -22,12 +21,12 @@ const Navbar: React.FC = () => {
     { name: "SPONSORS", href: "#sponsors" },
     { name: "TEAM", href: "#team" },
     { name: "FAQS", href: "#faqs" },
-    { name: "SWAG", href: "https://codeslayerbadge.netlify.app/" },
+    // { name: "SWAG", href: "https://codeslayerbadge.netlify.app/" },
   ];
 
   // Add any internal app routes (rendered with <Link>)
   const routeItems: NavItem[] = [
-    { name: "BATCH GENERATOR", href: "/batch-generator" }, // NEW: integrated route
+    { name: "SWAG", href: "/batch-generator" }, // NEW: integrated route
   ];
 
   // Combined view order (you can reorder as needed)
