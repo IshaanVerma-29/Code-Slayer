@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap');
 
+/* --- Tailwind Directives --- */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Demon Slayer Themed Design System */
 
+/* --- Demon Slayer Themed Design System --- */
 @layer base {
   :root {
     /* Demon Slayer Color Palette */

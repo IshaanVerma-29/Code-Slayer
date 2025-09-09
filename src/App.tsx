@@ -3,6 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Hero from "./pages/Hero";
@@ -13,6 +14,7 @@ import Rewards from "./pages/Rewards";
 import Sponsors from "./pages/Sponsors";
 import Team from "./pages/Team";
 import FAQs from "./pages/FAQs";
+import BatchGenerator from "./pages/BatchGenerator/BatchGenerator"; // ✅ use correct file
 
 const queryClient = new QueryClient();
 
@@ -32,7 +34,11 @@ const App = () => (
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/team" element={<Team />} />
           <Route path="/faqs" element={<FAQs />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+
+          {/* ✅ Badge Generator route */}
+          <Route path="/batch-generator" element={<BatchGenerator />} />
+
+          {/* Catch-all route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

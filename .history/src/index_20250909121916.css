@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap');
+
+/* --- Tailwind Directives --- */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- Demon Slayer Themed Design System --- */
+@layer base {
+  :root {
+    /* Demon Slayer Color Palette */
+    --background: 220 15% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 220 20% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 218 25% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    /* Crimson/Fire theme */
+    --primary: 0 75% 50%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 15 85% 60%;
+
+    --secondary: 25 70% 45%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 220 15% 18%;
+    --muted-foreground: 210 15% 70%;
+
+    --accent: 35 80% 55%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 85% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 15% 25%;
+    --input: 220 15% 20%;
+    --ring: 0 75% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom Demon Slayer variables */
+    --flame: 15 85% 60%;
+    --shadow: 220 30% 5%;
+    --gold: 45 95% 65%;
+    --steel: 200 15% 60%;
+    
+    /* Gradients */
+    --gradient-flame: linear-gradient(135deg, hsl(0 75% 50%), hsl(25 85% 60%), hsl(45 90% 65%));
+    --gradient-shadow: linear-gradient(180deg, hsl(220 25% 8%), hsl(220 35% 5%));
+    --gradient-mystical: linear-gradient(45deg, hsl(280 60% 20%), hsl(0 75% 50%), hsl(35 80% 55%));
+    
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-blade: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .light {
+    --background: 0 0% 98%;
+    --foreground: 220 15% 8%;
+    --card: 0 0% 95%;
+    --border: 220 15% 85%;
+  }
+}
+
+/* Custom Demon Slayer Animations & Effects */
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: 'Noto Sans JP', sans-serif;
+    cursor: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4 28 L16 2 L28 28 L16 24 Z' fill='%23dc2626' stroke='%23991b1b' stroke-width='2'/%3e%3c/svg%3e"), auto;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Custom Sword Cursor Variants */
+  .cursor-sword {
+    cursor: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4 28 L16 2 L28 28 L16 24 Z' fill='%23dc2626' stroke='%23991b1b' stroke-width='2'/%3e%3c/svg%3e"), auto;
+  }
+
+  .cursor-blade:hover {
+    cursor: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4 28 L16 2 L28 28 L16 24 Z' fill='%23f97316' stroke='%23ea580c' stroke-width='2'/%3e%3c/svg%3e"), auto;
+  }
+
+  /* Flame Background Animation */
+  .flame-bg {
+    background: var(--gradient-flame);
+    background-size: 400% 400%;
+    animation: flame-dance 4s ease-in-out infinite;
+  }
+
+  /* Mystical Glow Effects */
+  .mystical-glow {
+    box-shadow: 0 0 30px hsl(var(--primary) / 0.3), 0 0 80px hsl(var(--primary) / 0.1);
+  }
+
+  .demon-text {
+    background: var(--gradient-flame);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: flame-text 3s ease-in-out infinite;
+  }
+
+  /* Traditional Japanese Pattern */
+  .japanese-pattern::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 25% 25%, hsl(var(--primary) / 0.1) 2px, transparent 2px),
+      radial-gradient(circle at 75% 75%, hsl(var(--secondary) / 0.1) 2px, transparent 2px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: -1;
+  }
+}
+
+@layer utilities {
+  /* Keyframe Animations */
+  @keyframes flame-dance {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  @keyframes flame-text {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  @keyframes blade-slash {
+    0% { transform: translateX(-100%) rotate(-45deg); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateX(100%) rotate(-45deg); opacity: 0; }
+  }
+
+  @keyframes mystical-pulse {
+    0%, 100% { 
+      box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+      transform: scale(1);
+    }
+    50% { 
+      box-shadow: 0 0 40px hsl(var(--primary) / 0.5);
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes ember-float {
+    0% { transform: translateY(0px) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+  }
+
+  @keyframes scroll-reveal {
+    from { 
+      opacity: 0; 
+      transform: translateY(50px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+
+  /* Animation Classes */
+  .animate-flame-dance { animation: flame-dance 4s ease-in-out infinite; }
+  .animate-blade-slash { animation: blade-slash 0.8s ease-out; }
+  .animate-mystical-pulse { animation: mystical-pulse 2s ease-in-out infinite; }
+  .animate-ember-float { animation: ember-float 3s linear infinite; }
+  .animate-scroll-reveal { animation: scroll-reveal 0.6s ease-out forwards; }
+
+  /* Hover Effects */
+  .hover-blade { transition: var(--transition-blade); }
+  .hover-blade:hover { 
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 30px hsl(var(--primary) / 0.3);
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 30px hsl(var(--primary) / 0.4);
+    text-shadow: 0 0 10px hsl(var(--primary) / 0.6);
+  }
+}
+
+img {
+  height: 2.5rem; /* equivalent to h-10 */
+  width: auto;    /* equivalent to w-auto */
+}

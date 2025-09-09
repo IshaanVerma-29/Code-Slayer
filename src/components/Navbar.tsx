@@ -1,10 +1,19 @@
 import { useState } from "react";
 import { Menu, X, LogIn } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
-const Navbar = () => {
+type NavItem = {
+  name: string;
+  href: string; // either "#section" or "/route" or an absolute url
+};
+
+const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Keep section anchors that scroll on the same page
+  const navItems: NavItem[] = [
+    { name: "HOME", href: "#home" },
   const navItems = [
     { name: "ABOUT", href: "#about" },
     { name: "TIMELINE", href: "#timeline" },
@@ -15,6 +24,46 @@ const Navbar = () => {
     { name: "FAQS", href: "#faqs" },
     { name: "SWAG", href: "https://codeslayerbadge.netlify.app/" },
   ];
+
+  // Add any internal app routes (rendered with <Link>)
+  const routeItems: NavItem[] = [
+    { name: "BATCH GENERATOR", href: "/batch-generator" }, // NEW: integrated route
+  ];
+
+  // Combined view order (you can reorder as needed)
+  const desktopItems = [...navItems, ...routeItems];
+
+  const renderNavLink = (item: NavItem, onClick?: () => void) => {
+    // If starts with '/', treat as React Router route link
+    if (item.href.startsWith("/")) {
+      return (
+        <Link
+          key={item.name}
+          to={item.href}
+          onClick={onClick}
+          className="relative group px-4 py-2 text-sm font-semibold text-gray-300 hover:text-white transition-all duration-300 cursor-blade"
+        >
+          <span className="relative z-10">{item.name}</span>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100"></div>
+          <div className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary group-hover:w-full group-hover:left-0 transition-all duration-300"></div>
+        </Link>
+      );
+    }
+
+    // For hash anchors or external links (doesn't start with '/')
+    return (
+      <a
+        key={item.name}
+        href={item.href}
+        onClick={onClick}
+        className="relative group px-4 py-2 text-sm font-semibold text-gray-300 hover:text-white transition-all duration-300 cursor-blade"
+      >
+        <span className="relative z-10">{item.name}</span>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100"></div>
+        <div className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary group-hover:w-full group-hover:left-0 transition-all duration-300"></div>
+      </a>
+    );
+  };
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-gradient-to-r from-gray-900/95 via-black/95 to-gray-900/95 backdrop-blur-xl border-b border-primary/20 shadow-2xl">
@@ -40,17 +89,7 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="flex items-center space-x-1">
-              {navItems.map((item, index) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="relative group px-4 py-2 text-sm font-semibold text-gray-300 hover:text-white transition-all duration-300 cursor-blade"
-                >
-                  <span className="relative z-10">{item.name}</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100"></div>
-                  <div className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary group-hover:w-full group-hover:left-0 transition-all duration-300"></div>
-                </a>
-              ))}
+              {desktopItems.map((item) => renderNavLink(item))}
             </div>
           </div>
 
@@ -58,7 +97,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-4 pl-10">
             <Button
               className="relative overflow-hidden bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white font-semibold px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/30 cursor-blade group"
-              onClick={() => window.open('https://chat.whatsapp.com/E28GNRJEjxrGOwZJoAy5bB', '_blank')}
+              onClick={() => window.open("https://chat.whatsapp.com/E28GNRJEjxrGOwZJoAy5bB", "_blank")}
             >
               <LogIn className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transform duration-300" />
               <span>CONTACT</span>
@@ -85,22 +124,40 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-gradient-to-b from-gray-900/98 to-black/98 backdrop-blur-xl border-t border-primary/20 shadow-2xl">
           <div className="px-4 pt-4 pb-6 space-y-2">
-            {navItems.map((item, index) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="block relative group px-4 py-3 text-base font-semibold text-gray-300 hover:text-white rounded-lg transition-all duration-300 cursor-blade"
-                onClick={() => setIsOpen(false)}
-              >
-                <span className="relative z-10">{item.name}</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
-              </a>
-            ))}
+            {/* Render the same items for mobile; clicking closes the menu */}
+            {[...navItems, ...routeItems].map((item) => {
+              // For route links, use Link; else anchor
+              if (item.href.startsWith("/")) {
+                return (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className="block relative group px-4 py-3 text-base font-semibold text-gray-300 hover:text-white rounded-lg transition-all duration-300 cursor-blade"
+                  >
+                    <span className="relative z-10">{item.name}</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+                  </Link>
+                );
+              }
+
+              return (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  onClick={() => setIsOpen(false)}
+                  className="block relative group px-4 py-3 text-base font-semibold text-gray-300 hover:text-white rounded-lg transition-all duration-300 cursor-blade"
+                >
+                  <span className="relative z-10">{item.name}</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+                </a>
+              );
+            })}
             <div className="pt-4 border-t border-primary/20">
               <Button
                 className="w-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white font-semibold py-3 rounded-lg transition-all duration-300 hover:scale-105 cursor-blade"
                 onClick={() => {
-                  window.open('https://chat.whatsapp.com/E28GNRJEjxrGOwZJoAy5bB', '_blank');
+                  window.open("https://chat.whatsapp.com/E28GNRJEjxrGOwZJoAy5bB", "_blank");
                   setIsOpen(false);
                 }}
               >
