@@ -20,7 +20,7 @@ const teamMembers = [
     {
         name: "Nitin Sengar",
         linkedin: "https://www.linkedin.com/in/contactnitinsengar/",
-        image: "https://res.cloudinary.com/drr3xypxn/image/upload/v1755088228/Nitin_Sengar_bnxbte.jpg",
+        image: "public/Nitin.jpg",
         role: <>Community Manager</>,
         color: "green"
     }
@@ -75,7 +75,7 @@ const Team = () => {
                     </div>
                 </div>
                 {/* Members Grid */}
-                <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-8 justify-center">
+                <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8 justify-center">
                     {getMembers().map((member, index) => (
                         <div key={index} className="group relative perspective-1000">
                             <div className="relative w-full h-[400px] transform-style-preserve-3d transition-all duration-700 group-hover:rotate-y-6 group-hover:scale-105">

@@ -4,9 +4,17 @@
   box-sizing: border-box;
 }
 
+/* Enhanced Digital Swag Background with dem.jpg */
 body {
   font-family: 'Chonburi', cursive;
-  background: linear-gradient(135deg, #0a0a15 0%, #1a0a20 30%, #2d1b33 60%, #1a0a20 100%);
+  background: 
+    linear-gradient(135deg, 
+      rgba(10, 10, 21, 0.8) 0%, 
+      rgba(26, 10, 32, 0.7) 30%, 
+      rgba(45, 27, 51, 0.6) 60%, 
+      rgba(26, 10, 32, 0.8) 100%
+    ),
+    url('dem.jpg') center/cover fixed;
   color: white;
   min-height: 100vh;
   overflow-x: hidden;
@@ -21,10 +29,10 @@ body::before {
   width: 100%;
   height: 100%;
   background-image:
-    radial-gradient(circle at 20% 80%, rgba(220, 38, 127, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(255, 69, 0, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(138, 43, 226, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 60% 80%, rgba(255, 215, 0, 0.1) 0%, transparent 50%);
+    radial-gradient(circle at 20% 80%, rgba(220, 38, 127, 0.25) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 69, 0, 0.25) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(138, 43, 226, 0.25) 0%, transparent 50%),
+    radial-gradient(circle at 60% 80%, rgba(255, 215, 0, 0.2) 0%, transparent 50%);
   pointer-events: none;
   z-index: -1;
 }
@@ -241,7 +249,9 @@ button:hover:before {
 .generate-btn {
   background: linear-gradient(45deg, #dc267f, #ff4500, #dc267f);
   background-size: 200% 200%;
-  color: white;
+  color: white;  
+  width: 200px;         /* optional: fixed width */
+  height: 50px;         /* optional: fixed height */
   box-shadow: 0 15px 30px rgba(220, 38, 127, 0.4);
   animation: buttonGlow 3s ease-in-out infinite alternate;
 }
@@ -569,125 +579,216 @@ button:hover:before {
   }
 
   .badge-container {
-    width: min(320px, 90vw);
-    height: min(400px, 112.5vw);
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 0.25rem;
-  }
-  
-  .left-panel {
-    padding: 1rem;
-    border-radius: 15px;
-  }
-  
-  .input-group {
-    margin-bottom: 1.5rem;
-  }
-  
-  input[type="file"], 
-  input[type="text"] {
-    padding: 1rem;
-    border-radius: 15px;
-  }
-  
-  button {
-    padding: 1.2rem 1.8rem;
-    border-radius: 15px;
-  }
-
-  .badge-container {
-    width: min(280px, 95vw);
-    height: min(350px, 118.75vw);
-    border-width: 4px;
-    border-radius: 20px;
-  }
-
-  .user-image {
-    border-width: 6px;
-  }
-}
-
-/* Loading animation */
-.generating {
-  position: relative;
-}
-
-.generating::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  margin: -10px 0 0 -10px;
-  border: 2px solid transparent;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Scroll optimization for mobile */
-@media (max-height: 600px) and (max-width: 768px) {
-  .container {
-    min-height: auto;
-  }
-  
-  body {
-    min-height: auto;
-  }
-}
-
-/* Enhanced badge quality after generation */
-.badge-generated .badge-container {
-  box-shadow:
-    0 0 60px rgba(255, 215, 0, 0.8),
-    0 0 120px rgba(220, 38, 127, 0.6),
-    inset 0 0 60px rgba(0, 0, 0, 0.4);
-  filter: brightness(1.1) contrast(1.1) saturate(1.2);
-}
-
-.badge-generated .user-image {
-  filter: contrast(1.2) brightness(1.1) saturate(1.3) drop-shadow(0 0 20px rgba(255, 215, 0, 0.8));
-}
-
-.badge-generated .user-name {
-  margin-top: 70px;
-  text-shadow: 
-    3px 3px 8px rgba(0, 0, 0, 0.9),
-    0 0 20px rgba(15, 50, 188, 0.9),
-    0 0 30px rgba(20, 20, 200, 0.6);
-}
-
-.success-message {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: linear-gradient(45deg, #ffd700, #ff8c00);
-  color: #1a0a20;
-  padding: 15px 25px;
-  border-radius: 10px;
-  font-weight: bold;
-  font-family: 'Times New Roman', serif;
-  z-index: 1000;
-  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
-  animation: slideInRight 0.5s ease-out;
-}
-
-@keyframes slideInRight {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
+    /* Enhanced Button Styles for Maximum Visibility */
+    .button-group {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    button {
+      flex: 1;
+      min-width: 220px;
+      max-width: 280px;
+      padding: 1.8rem 3rem;
+      font-size: clamp(1.2rem, 2.8vw, 1.5rem);
+      font-weight: 900;
+      font-family: 'Chonburi', cursive;
+      border: 3px solid transparent;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+      overflow: hidden;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+    
+    /* Enhanced Generate Button */
+    .generate-btn {
+      background: 
+        linear-gradient(45deg, #dc267f, #ff4500, #ff8c00, #dc267f),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent);
+      background-size: 300% 300%, 300% 300%;
+      color: white;
+      border-color: #dc267f;
+      box-shadow: 
+        0 20px 40px rgba(220, 38, 127, 0.6),
+        0 0 0 2px rgba(255, 255, 255, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+      animation: enhancedButtonGlow 2s ease-in-out infinite alternate;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    
+    .generate-btn:hover {
+      transform: translateY(-6px) scale(1.05);
+      box-shadow: 
+        0 25px 50px rgba(220, 38, 127, 0.8),
+        0 0 0 3px rgba(255, 255, 255, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+      background-position: 100% 100%, 0% 0%;
+    }
+    
+    .generate-btn:active {
+      transform: translateY(-2px) scale(1.02);
+    }
+    
+    /* Enhanced Download Button */
+    .download-btn {
+      background: 
+        linear-gradient(45deg, #ffd700, #ff8c00, #ff4500, #ffd700),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent);
+      background-size: 300% 300%, 100% 100%;
+      color: #1a0a20;
+      border-color: #ffd700;
+      box-shadow: 
+        0 20px 40px rgba(255, 215, 0, 0.6),
+        0 0 0 2px rgba(255, 255, 255, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+      animation: enhancedButtonGlow 2s ease-in-out infinite alternate-reverse;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .download-btn:hover {
+      transform: translateY(-6px) scale(1.05);
+      box-shadow: 
+        0 25px 50px rgba(255, 215, 0, 0.8),
+        0 0 0 3px rgba(255, 255, 255, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+      background-position: 100% 100%, 0% 0%;
+    }
+    
+    .download-btn:active {
+      transform: translateY(-2px) scale(1.02);
+    }
+    
+    /* Enhanced Button Glow Animation */
+    @keyframes enhancedButtonGlow {
+      0% {
+        background-position: 0% 50%, 0% 0%;
+        box-shadow: 
+          0 20px 40px rgba(var(--glow-color, 220, 38, 127), 0.6),
+          0 0 0 2px rgba(255, 255, 255, 0.1);
+      }
+      100% {
+        background-position: 100% 50%, 100% 100%;
+        box-shadow: 
+          0 25px 50px rgba(var(--glow-color, 220, 38, 127), 0.8),
+          0 0 0 3px rgba(255, 255, 255, 0.2);
+      }
+    }
+    
+    /* Enhanced Button Shine Effect */
+    button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -150%;
+      width: 150%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+      );
+      transition: left 0.8s;
+      transform: skewX(-25deg);
+    }
+    
+    button:hover::before {
+      left: 150%;
+    }
+    
+    /* Button Focus States */
+    button:focus-visible {
+      outline: none;
+      box-shadow: 
+        0 0 0 4px rgba(255, 255, 255, 0.5),
+        0 0 0 8px rgba(var(--glow-color, 220, 38, 127), 0.3);
+    }
+    
+    .generate-btn:focus-visible {
+      --glow-color: 220, 38, 127;
+    }
+    
+    .download-btn:focus-visible {
+      --glow-color: 255, 215, 0;
+    }
+    
+    /* Crazy Page Animations */
+    .container {
+      display: flex;
+      min-height: 100vh;
+      gap: 2rem;
+      padding: 1rem;
+      animation: pageBreathing 6s ease-in-out infinite alternate;
+    }
+    
+    @keyframes pageBreathing {
+      0% { background-position: 0% 0%; }
+      100% { background-position: 100% 100%; }
+    }
+    
+    /* Enhanced User Image Animation */
+    .user-image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ffd700;
+      box-shadow: 
+        0 0 20px rgba(255, 215, 0, 0.8),
+        0 0 40px rgba(220, 38, 127, 0.6);
+      animation: userImageGlow 4s ease-in-out infinite alternate;
+      z-index: 3;
+      position: relative;
+    }
+    
+    @keyframes userImageGlow {
+      0% { 
+        box-shadow: 
+          0 0 20px rgba(255, 215, 0, 0.8),
+          0 0 40px rgba(220, 38, 127, 0.6);
+        transform: scale(1);
+      }
+      100% { 
+        box-shadow: 
+          0 0 30px rgba(255, 215, 0, 1),
+          0 0 60px rgba(220, 38, 127, 0.9);
+        transform: scale(1.05);
+      }
+    }
+    
+    /* Enhanced Text Animations */
+    .badge-text {
+      font-family: 'Chonburi', cursive;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #ffd700;
+      text-shadow: 
+        0 0 10px rgba(255, 215, 0, 0.8),
+        0 0 20px rgba(255, 69, 0, 0.6);
+      animation: textPulse 3s ease-in-out infinite alternate;
+    }
+    
+    @keyframes textPulse {
+      0% { 
+        text-shadow: 
+          0 0 10px rgba(255, 215, 0, 0.8),
+          0 0 20px rgba(255, 69, 0, 0.6);
+        transform: scale(1);
+      }
+      100% { 
+        text-shadow: 
+          0 0 20px rgba(255, 215, 0, 1),
+          0 0 40px rgba(255, 69, 0, 0.9);
+        transform: scale(1.1);
+      }
+    }
   }
 }

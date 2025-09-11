@@ -115,7 +115,7 @@ const BadgeGenerator: React.FC = () => {
         useCORS: true,
         allowTaint: true,
         scale: 3,
-        backgroundColor: null,
+        // Remove backgroundColor: null to preserve background
         width: (badgeRef.current as HTMLElement)?.offsetWidth,
         height: (badgeRef.current as HTMLElement)?.offsetHeight,
         scrollX: 0,
