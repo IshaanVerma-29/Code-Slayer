@@ -20,7 +20,7 @@ const teamMembers = [
     {
         name: "Nitin Sengar",
         linkedin: "https://www.linkedin.com/in/contactnitinsengar/",
-        image: "public/Nitin.jpg",
+        image: "/Nitin.jpg",
         role: <>Community Manager</>,
         color: "green"
     }
