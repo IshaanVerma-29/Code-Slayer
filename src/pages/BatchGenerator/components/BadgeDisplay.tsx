@@ -15,7 +15,7 @@ type BadgeDisplayProps = {
  */
 // Add enhanced background layer to BadgeDisplay
 const BadgeDisplay = forwardRef<HTMLDivElement, BadgeDisplayProps>(
-  ({ imageSrc = "src/pages/BatchGenerator/codeslayer.png", name = "Your Name", badgeGenerated = false }, ref: Ref<HTMLDivElement>) => {
+  ({ imageSrc = "codeslayer.png", name = "Your Name", badgeGenerated = false }, ref: Ref<HTMLDivElement>) => {
     return (
       <div className="right-panel">
         <div 
@@ -24,14 +24,14 @@ const BadgeDisplay = forwardRef<HTMLDivElement, BadgeDisplayProps>(
           style={{
             // Enhanced background with multiple layers
             background: `
-              linear-gradient(45deg, 
+              linear-gradient(45deg,
                 rgba(255, 69, 0, 0.3) 0%, 
                 rgba(220, 38, 127, 0.2) 25%, 
                 rgba(138, 43, 226, 0.3) 50%, 
                 rgba(255, 215, 0, 0.2) 75%, 
                 rgba(255, 69, 0, 0.3) 100%
               ),
-              url('src/pages/BatchGenerator/dem.jpg')
+              url('/dem.jpg')
             `,
             backgroundSize: 'cover, cover',
             backgroundPosition: 'center, center',
@@ -61,9 +61,6 @@ const BadgeDisplay = forwardRef<HTMLDivElement, BadgeDisplayProps>(
 
           {/* User name */}
           <div className="badge-text user-name">{name || "Your Name"}</div>
-
-          {/* Logo */}
-          <img src="DevSphereIndia logo.png" alt="DevSphereIndia Logo" className="logo" />
 
           {/* Event name */}
           <div className="badge-text event-name">
