@@ -140,9 +140,6 @@ const Footer = () => {
               </h4>
               <a
                 href="/Batch-Generator"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
               >
                 <Button
                   className="w-full bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 
