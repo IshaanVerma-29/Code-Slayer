@@ -3,7 +3,7 @@ import html2canvas from "html2canvas";
 import BadgeDisplay from "./BadgeDisplay";
 
 const BadgeGenerator: React.FC = () => {
-  const [imageSrc, setImageSrc] = useState<string>("codeslayer.png");
+  const [imageSrc, setImageSrc] = useState<string>("https://res.cloudinary.com/dembediei/image/upload/v1758026107/codeslayer_ebp43s.png");
   const [name, setName] = useState<string>("");
   const [badgeGenerated, setBadgeGenerated] = useState<boolean>(false);
   const [isGenerating, setIsGenerating] = useState<boolean>(false);

@@ -137,7 +137,7 @@ const Tracks = () => {
                             <div className="relative p-8 pt-16 text-center z-10 transform group-hover:-translate-y-2 transition-transform duration-300">
                                 <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-cyan-100/30 backdrop-blur-sm border border-cyan-200/60 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300 group-hover:shadow-lg group-hover:shadow-cyan-500/30 overflow-hidden">
                                     <img
-                                        src="/IoT image.png"
+                                        src="https://res.cloudinary.com/dembediei/image/upload/v1758026108/IoT_image_zrwgte.png"
                                         alt="Internet of Things"
                                         className="w-16 h-16 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-lg"
                                     />

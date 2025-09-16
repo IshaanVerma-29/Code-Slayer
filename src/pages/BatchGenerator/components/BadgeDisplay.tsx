@@ -15,7 +15,7 @@ type BadgeDisplayProps = {
  */
 // Add enhanced background layer to BadgeDisplay
 const BadgeDisplay = forwardRef<HTMLDivElement, BadgeDisplayProps>(
-  ({ imageSrc = "codeslayer.png", name = "Your Name", badgeGenerated = false }, ref: Ref<HTMLDivElement>) => {
+  ({ imageSrc = "https://res.cloudinary.com/dembediei/image/upload/v1758026107/codeslayer_ebp43s.png", name = "Your Name", badgeGenerated = false }, ref: Ref<HTMLDivElement>) => {
     return (
       <div className="right-panel">
         <div 
@@ -31,7 +31,7 @@ const BadgeDisplay = forwardRef<HTMLDivElement, BadgeDisplayProps>(
                 rgba(255, 215, 0, 0.2) 75%, 
                 rgba(255, 69, 0, 0.3) 100%
               ),
-              url('/dem.jpg')
+              url('https://res.cloudinary.com/dembediei/image/upload/v1758026108/dem_teq8lo.jpg')
             `,
             backgroundSize: 'cover, cover',
             backgroundPosition: 'center, center',
