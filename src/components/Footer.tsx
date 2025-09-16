@@ -139,7 +139,7 @@ const Footer = () => {
                 Swag Badge Generator
               </h4>
               <a
-                href="/Batch-Generator"
+                href="./Batch-Generator"
               >
                 <Button
                   className="w-full bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 

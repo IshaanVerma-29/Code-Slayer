@@ -1,6 +1,6 @@
 import React from "react";
-import BadgeGenerator from "./components/BadgeGenerator";
-import "./batchgenerator.css";
+import BadgeGenerator from "./BatchGenerator/components/BadgeGenerator";
+import "./BatchGenerator/batchgenerator.css";
 
 /**
  * BatchGenerator page

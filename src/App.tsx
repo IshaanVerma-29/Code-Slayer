@@ -14,7 +14,7 @@ import Rewards from "./pages/Rewards";
 import Sponsors from "./pages/Sponsors";
 import Team from "./pages/Team";
 import FAQs from "./pages/FAQs";
-import BatchGenerator from "./pages/BatchGenerator/BatchGenerator"; // ✅ use correct file
+import BatchGenerator from "./pages/BatchGenerator"; // ✅ use correct file
 
 const queryClient = new QueryClient();
 
