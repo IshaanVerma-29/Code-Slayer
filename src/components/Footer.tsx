@@ -134,7 +134,7 @@ const Footer = () => {
               </Button>
             </div>
 
-            <div>
+            {/* <div>
               <h4 className="font-semibold text-accent mb-4">
                 Swag Badge Generator
               </h4>
@@ -150,7 +150,7 @@ const Footer = () => {
                   Generate Now
                 </Button>
               </a>
-            </div>
+            </div> */}
 
           </div>
 
