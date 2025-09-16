@@ -139,7 +139,7 @@ const Footer = () => {
                 Swag Badge Generator
               </h4>
               <a
-                href="batch-generator"
+                href="/Batch-Generator"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"

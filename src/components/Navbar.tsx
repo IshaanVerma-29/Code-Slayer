@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
 
   // Add any internal app routes (rendered with <Link>)
   const routeItems: NavItem[] = [
-    { name: "SWAG", href: "/batch-generator" }, // NEW: integrated route
+    { name: "SWAG", href: "/Batch-Generator" }, // NEW: integrated route
   ];
 
   // Combined view order (you can reorder as needed)
