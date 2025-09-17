@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
 
   // Keep section anchors that scroll on the same page
   const navItems: NavItem[] = [
-    // { name: "HOME", href: "#home" },
+    { name: "HOME", href: "#home" },
     { name: "ABOUT", href: "#about" },
     { name: "TIMELINE", href: "#timeline" },
     { name: "TRACKS", href: "#tracks" },
@@ -24,12 +24,12 @@ const Navbar: React.FC = () => {
   ];
 
   // Add any internal app routes (rendered with <Link>)
-  const routeItems: NavItem[] = [
-    { name: "SWAG", href: "/batch-generator" }, // NEW: integrated route
-  ];
+  // const routeItems: NavItem[] = [
+  //   { name: "SWAG", href: "/batch-generator" }, // NEW: integrated route
+  // ];
 
   // Combined view order (you can reorder as needed)
-  const desktopItems = [...navItems, ...routeItems];
+  const desktopItems = [...navItems];
 
   const renderNavLink = (item: NavItem, onClick?: () => void) => {
     // If starts with '/', treat as React Router route link
@@ -123,7 +123,7 @@ const Navbar: React.FC = () => {
         <div className="md:hidden bg-gradient-to-b from-gray-900/98 to-black/98 backdrop-blur-xl border-t border-primary/20 shadow-2xl">
           <div className="px-4 pt-4 pb-6 space-y-2">
             {/* Render the same items for mobile; clicking closes the menu */}
-            {[...navItems, ...routeItems].map((item) => {
+            {[...navItems].map((item) => {
               // For route links, use Link; else anchor
               if (item.href.startsWith("/")) {
                 return (

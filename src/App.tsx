@@ -14,7 +14,7 @@ import Rewards from "./pages/Rewards";
 import Sponsors from "./pages/Sponsors";
 import Team from "./pages/Team";
 import FAQs from "./pages/FAQs";
-import BatchGenerator from "./pages/BatchGenerator"; // ✅ use correct file
+// import BatchGenerator from "./pages/BatchGenerator"; // ✅ use correct file
 
 const queryClient = new QueryClient();
 
@@ -35,8 +35,8 @@ const App = () => (
           <Route path="/team" element={<Team />} />
           <Route path="/faqs" element={<FAQs />} />
 
-          {/* ✅ Badge Generator route */}
-          <Route path="/batch-generator" element={<BatchGenerator />} />
+          {/* ✅ Badge Generator route
+          <Route path="/batch-generator" element={<BatchGenerator />} /> */}
 
           {/* Catch-all route */}
           <Route path="*" element={<NotFound />} />
