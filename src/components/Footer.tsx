@@ -115,6 +115,10 @@ const Footer = () => {
                   <Phone className="h-4 w-4 text-accent group-hover:scale-110 transition-transform duration-300" />
                   <p className="text-sm">9983750681 (Arabhay Aggarwal)</p>
                 </div>
+                <div className="flex items-center space-x-2 group hover:text-white transition-colors duration-300">
+                  <Phone className="h-4 w-4 text-accent group-hover:scale-110 transition-transform duration-300" />
+                  <p className="text-sm">9773873204 (Nitin Singh Sengar)</p>
+                </div>                
               </div>
             </div>
 
