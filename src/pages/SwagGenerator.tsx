@@ -137,7 +137,7 @@ const SwagGenerator = () => {
               </span>
             </div>
           </div>
-          <h1 className="text-3xl sm:text-5xl font-bold text-white mb-3 sm:mb-4" style={{fontFamily: "'Orbitron', monospace"}}>
+          <h1 className="text-3xl sm:text-5xl font-bold text-white mb-3 sm:mb-4 py-3" style={{fontFamily: "'Orbitron', monospace"}}>
             Digital Swag Generator
           </h1>
           <p className="text-base sm:text-xl text-gray-300 max-w-2xl mx-auto px-2">
