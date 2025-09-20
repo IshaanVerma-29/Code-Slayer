@@ -12,17 +12,17 @@ import Footer from "@/components/Footer";
 import IntroVideo from "@/components/IntroVideo";
 
 const Index = () => {
-  const [showIntro, setShowIntro] = useState(true);
+  const [showIntro, setShowIntro] = useState(false); // Start with false
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Check if user has already seen the intro (optional)
+    // Check if user has already seen the intro
     const hasSeenIntro = localStorage.getItem('hasSeenIntro');
     if (hasSeenIntro === 'true') {
-      setShowIntro(false);
+      setShowIntro(false); // Don't show intro if already seen
       setIsLoading(false);
     } else {
-      setShowIntro(true);
+      setShowIntro(true); // Show intro if not seen
       setIsLoading(false);
     }
   }, []);
