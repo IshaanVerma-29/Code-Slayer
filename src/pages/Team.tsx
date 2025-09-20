@@ -12,7 +12,7 @@ const teamMembers = [
     },
     {
         name: "Arabhay Aggarwal",
-        linkedin: "https://www.linkedin.com/in/arabhay-agrawal-891013372",
+        linkedin: "https://www.linkedin.com/in/arabhay-agrawal-493761343/",
         image: "https://res.cloudinary.com/drr3xypxn/image/upload/v1755088224/Arabhay_Agrawal_xlcfcf.jpg",
         role: <>Founder</>,
         color: "teal"

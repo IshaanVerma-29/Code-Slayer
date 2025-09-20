@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from 'react';
 import Navbar from "@/components/Navbar";
 import Hero from "./Hero";
 import About from "./About";
@@ -9,8 +9,28 @@ import Sponsors from "./Sponsors";
 import Team from "./Team";
 import FAQs from "./FAQs";
 import Footer from "@/components/Footer";
+import IntroVideo from "@/components/IntroVideo";
 
 const Index = () => {
+  const [showIntro, setShowIntro] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Check if user has already seen the intro (optional)
+    const hasSeenIntro = localStorage.getItem('hasSeenIntro');
+    if (hasSeenIntro === 'true') {
+      setShowIntro(false);
+      setIsLoading(false);
+    } else {
+      setIsLoading(false);
+    }
+  }, []);
+
+  const handleVideoComplete = () => {
+    setShowIntro(false);
+    localStorage.setItem('hasSeenIntro', 'true');
+  };
+
   useEffect(() => {
     // Function to check if an element is in viewport
     const isInViewport = (element: Element) => {
@@ -39,19 +59,26 @@ const Index = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  if (isLoading) {
+    return <div className="min-h-screen bg-black"></div>;
+  }
+
   return (
-    <div className="min-h-screen bg-background cursor-sword">
-      <Navbar />
-      <Hero />
-      <About />
-      <Timeline />
-      <Tracks />
-      <Rewards />
-      <Sponsors />
-      <Team />
-      <FAQs />
-      <Footer />
-    </div>
+    <>
+      {showIntro && <IntroVideo onVideoComplete={handleVideoComplete} />}
+      <div className={`min-h-screen bg-background cursor-sword transition-opacity duration-1000 ${showIntro ? 'opacity-0' : 'opacity-100'}`}>
+        <Navbar />
+        <Hero />
+        <About />
+        <Timeline />
+        <Tracks />
+        <Rewards />
+        <Sponsors />
+        <Team />
+        <FAQs />
+        <Footer />
+      </div>
+    </>
   );
 };
 

@@ -1,9 +1,15 @@
-import { Sword } from "lucide-react";
+import { Sword, Trophy } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
     const handleEnterBattle = () => {
         window.open("https://unstop.com/o/SCXzsBc?utm_medium=Share&utm_source=devspher50210&utm_campaign=Innovation_challenge", "_blank");
+    };
+
+    const navigate = useNavigate();
+    const handleLeaderboard = () => {
+        navigate("/leaderboard");
     };
 
     return (
@@ -56,6 +62,19 @@ const Hero = () => {
                     <span className="relative">
                         Enter the Battle
                         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white/50 group-hover:w-full transition-all duration-300"></span>
+                    </span>
+                </Button>
+
+                <Button 
+                size="lg" 
+                variant="outline"
+                className="bg-transparent border-2 border-primary hover:bg-primary/20 font-semibold px-6 sm:px-8 py-3 sm:py-4 cursor-blade shadow-2xl hover:shadow-primary/50 w-full max-w-xs mx-auto group overflow-hidden"
+                onClick={handleLeaderboard}
+                >
+                    <Trophy className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
+                    <span className="relative">
+                        View Leaderboard
+                        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
                     </span>
                 </Button>
             </div>
