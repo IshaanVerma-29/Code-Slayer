@@ -89,7 +89,8 @@ const SwagGenerator = () => {
       // Get the current computed dimensions of the card
       const computedStyle = window.getComputedStyle(cardElement);
       const currentWidth = parseInt(computedStyle.width);
-      
+      const currentHeight = parseInt(computedStyle.height);
+
       // Use html2canvas to capture the card's full content, preventing text from being cut off.
       const canvas = await html2canvas(cardElement, {
         width: currentWidth,
@@ -165,7 +166,7 @@ const SwagGenerator = () => {
                 value={participantName}
                 onChange={(e) => setParticipantName(e.target.value)}
                 placeholder="Enter your name..."
-                className="w-full px-4 py-3 rounded-xl bg-white/20 text-white placeholder-gray-300 border border-white/30 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                className="w-full px-4 py-3 rounded-xl bg-white/20 text-white placeholder-gray-300 border border-white/30 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent "
                 maxLength={30}
               />
             </div>
@@ -270,7 +271,7 @@ const SwagGenerator = () => {
             <div className="relative">
               <div 
                 id="swag-card"
-                className="relative w-[20rem] h-[25rem] sm:w-[24rem] sm:h-[30rem] md:w-[28rem] md:h-[35rem] rounded-3xl overflow-hidden shadow-2xl transform transition-all duration-500 hover:scale-105 mx-auto"
+                className="relative w-[28rem] h-[38rem] pb-12 rounded-3xl overflow-hidden"
                 style={{
                   backgroundImage: `url(${selectedTemplate.backgroundImage})`,
                   backgroundSize: 'cover',
@@ -297,7 +298,7 @@ const SwagGenerator = () => {
                     alt="Code Slayer Logo" 
                     className={`h-16 md:h-24 w-auto object-contain mb-3 md:mb-4 mx-auto animate-pulse ${selectedTemplate.accentColor}`}
                     />
-                    <h3 className={`text-2xl md:text-4xl font-black ${selectedTemplate.textColor} tracking-wider mb-2 md:mb-4`}>
+                    <h3 className={`text-2xl md:text-4xl font-black ${selectedTemplate.textColor} tracking-wider mb-2 md:mb-4 pb-4`}>
                       {eventName}
                     </h3>
                     </div>
@@ -316,7 +317,7 @@ const SwagGenerator = () => {
                     )}
                   </div>
                   
-                  <h2 className="text-2xl md:text-4xl font-black text-red-500 text-center mb-4 md:mb-6 tracking-wide drop-shadow-lg">
+                  <h2 className="text-2xl md:text-4xl font-black text-red-500 text-center mb-4 md:mb-6 tracking-wide drop-shadow-lg pb-4">
                     {participantName || 'Your Name'}
                   </h2>
                   <p className={`text-base md:text-xl ${selectedTemplate.textColor} opacity-90 text-center font-bold`}>

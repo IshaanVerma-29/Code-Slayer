@@ -65,7 +65,7 @@ const Hero = () => {
                     </span>
                 </Button>
 
-                <Button 
+                {/* <Button 
                 size="lg" 
                 variant="outline"
                 className="bg-transparent border-2 border-primary hover:bg-primary/20 font-semibold px-6 sm:px-8 py-3 sm:py-4 cursor-blade shadow-2xl hover:shadow-primary/50 w-full max-w-xs mx-auto group overflow-hidden"
@@ -76,7 +76,7 @@ const Hero = () => {
                         View Leaderboard
                         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
                     </span>
-                </Button>
+                </Button> */}
             </div>
         </section>
     );
