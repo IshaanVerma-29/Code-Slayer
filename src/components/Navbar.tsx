@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
 
   // Keep section anchors that scroll on the same page
   const navItems: NavItem[] = [
-    { name: "HOME", href: "#home" },
+    // { name: "HOME", href: "#home" },
     { name: "ABOUT", href: "#about" },
     { name: "TIMELINE", href: "#timeline" },
     { name: "TRACKS", href: "#tracks" },
@@ -21,12 +21,18 @@ const Navbar: React.FC = () => {
     { name: "SPONSORS", href: "#sponsors" },
     { name: "TEAM", href: "#team" },
     { name: "FAQS", href: "#faqs" },
+    { name: "SWAG", href: "/swag-generator" },
+    // { name: "LEADERBOARD", href: "/leaderboard" },
   ];
 
   // Add any internal app routes (rendered with <Link>)
   // const routeItems: NavItem[] = [
   //   { name: "SWAG", href: "/batch-generator" }, // NEW: integrated route
   // ];
+
+  <Link to="/swag-generator" className="px-6 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all">
+  Create Swag Card
+</Link>
 
   // Combined view order (you can reorder as needed)
   const desktopItems = [...navItems];

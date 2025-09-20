@@ -16,6 +16,7 @@ import Team from "./pages/Team";
 import FAQs from "./pages/FAQs";
 import Leaderboard from "./pages/Leaderboard";
 // import BatchGenerator from "./pages/BatchGenerator"; // ✅ use correct file
+import SwagGenerator from "./pages/SwagGenerator";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/team" element={<Team />} />
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
+          <Route path="/swag-generator" element={<SwagGenerator />} />
 
           {/* ✅ Badge Generator route
           <Route path="/batch-generator" element={<BatchGenerator />} /> */}
