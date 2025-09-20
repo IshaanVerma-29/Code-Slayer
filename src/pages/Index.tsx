@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from "@/components/Navbar";
 import Hero from "./Hero";
 import About from "./About";
@@ -19,7 +19,7 @@ const Index = () => {
     // Check if user has already seen the intro (optional)
     const hasSeenIntro = localStorage.getItem('hasSeenIntro');
     if (hasSeenIntro === 'true') {
-      setShowIntro(false);
+      setShowIntro(true);
       setIsLoading(false);
     } else {
       setIsLoading(false);

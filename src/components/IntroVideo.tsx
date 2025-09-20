@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Sword } from 'lucide-react';
 
 interface IntroVideoProps {
@@ -41,7 +41,7 @@ const IntroVideo = ({ onVideoComplete }: IntroVideoProps) => {
           className="w-full h-full object-cover"
           onEnded={handleVideoEnd}
         >
-          <source src="/1.mp4" type="video/mp4" />
+          <source src="/Intro.mp4" type="video/mp4" />
         </video>
         
         {/* Overlay with Logo/Branding */}
