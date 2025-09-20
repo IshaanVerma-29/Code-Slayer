@@ -33,7 +33,7 @@ const Leaderboard = () => {
       // Parse CSV data (skip header row if present)
       const startIndex = lines[0].includes('Team') ? 1 : 0;
       
-      for (let i = startIndex; i < lines.length && teams.length < 30; i++) {
+      for (let i = startIndex; i < lines.length && teams.length < 1000; i++) {
         const columns = lines[i].split(',').map(col => col.trim().replace(/"/g, ''));
         
         if (columns.length >= 2) {
