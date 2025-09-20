@@ -22,7 +22,7 @@ const templates: SwagTemplate[] = [
     gradient: 'bg-gradient-to-br from-purple-600/80 via-pink-600/80 to-blue-600/80',
     textColor: 'text-white',
     accentColor: 'text-yellow-300',
-    backgroundImage: '/demon-slayer-3840x2160-23615.jpg',
+    backgroundImage: '/theme1.jpg',
     overlay: 'bg-black/40'
   },
   {
@@ -31,7 +31,7 @@ const templates: SwagTemplate[] = [
     gradient: 'bg-gradient-to-br from-orange-500/80 via-red-500/80 to-pink-500/80',
     textColor: 'text-white',
     accentColor: 'text-yellow-200',
-    backgroundImage: '/slay.jpg',
+    backgroundImage: '/theme2.jpg',
     overlay: 'bg-black/30'
   },
   {
@@ -40,7 +40,7 @@ const templates: SwagTemplate[] = [
     gradient: 'bg-gradient-to-br from-indigo-900/80 via-purple-800/80 to-pink-700/80',
     textColor: 'text-white',
     accentColor: 'text-purple-300',
-    backgroundImage: '/9.jpg',
+    backgroundImage: '/theme3.jpg',
     overlay: 'bg-black/50'
   }
 ];
