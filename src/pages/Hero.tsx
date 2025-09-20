@@ -1,7 +1,11 @@
-import { Button } from "@/components/ui/button";
 import { Sword } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Hero = () => {
+    const handleEnterBattle = () => {
+        window.open("https://unstop.com/o/SCXzsBc?utm_medium=Share&utm_source=devspher50210&utm_campaign=Innovation_challenge", "_blank");
+    };
+
     return (
         <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
             {/* Video Background */}
@@ -40,10 +44,14 @@ const Hero = () => {
                 <p className="text-base xs:text-lg sm:text-xl mb-6 sm:mb-8 text-gray-200 max-w-md sm:max-w-2xl mx-auto animate-scroll-reveal drop-shadow-md">
                     Unleash your coding prowess in the ultimate hackathon. Build, innovate, and claim your place among the legends.
                     <span className="block text-xs xs:text-sm sm:text-base mt-1 text-gray-200/80">
-                        究極のWeb3ハッカソンであなたのコーディング力を解き放とう。創造し、革新し、伝説の中に自分の居場所を掴め。
+                        究極のハッカソンで、あなたのコーディングスキルを解き放ちましょう。構築し、革新し、伝説の仲間入りを果たしましょう。
                     </span>
                 </p>
-                <Button size="lg" className="flame-bg hover-blade font-semibold px-6 sm:px-8 py-3 sm:py-4 cursor-blade shadow-2xl hover:shadow-primary/50 w-full max-w-xs mx-auto group overflow-hidden">
+                <Button 
+                    size="lg" 
+                    className="flame-bg hover-blade font-semibold px-6 sm:px-8 py-3 sm:py-4 cursor-blade shadow-2xl hover:shadow-primary/50 w-full max-w-xs mx-auto group overflow-hidden"
+                    onClick={handleEnterBattle}
+                >
                     <Sword className="mr-2 h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
                     <span className="relative">
                         Enter the Battle

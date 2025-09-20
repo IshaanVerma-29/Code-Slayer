@@ -179,7 +179,7 @@ const Timeline = () => {
                                                 <div className="absolute bottom-3 left-8 w-1 h-1 bg-red-400 rounded-full animate-ping opacity-60" style={{ animationDelay: '0.8s' }}></div>
 
                                                 <div className="absolute top-2 right-2 bg-gradient-to-r from-gray-900 to-black text-orange-300 px-2 py-1 rounded text-xs font-bold border border-orange-800 shadow-lg">
-                                                    SEP<br />27
+                                                    SEP<br />20
                                                 </div>
                                                 <div className="pr-10 relative z-10">
                                                     <h3 className="text-lg font-bold text-orange-200 mb-1 drop-shadow-lg">Idea Submissions Start</h3>
@@ -204,7 +204,7 @@ const Timeline = () => {
                                                 <div className="absolute bottom-3 left-8 w-1 h-1 bg-red-400 rounded-full animate-ping opacity-60" style={{ animationDelay: '0.8s' }}></div>
 
                                                 <div className="absolute top-2 right-2 bg-gradient-to-r from-gray-900 to-black text-orange-300 px-2 py-1 rounded text-xs font-bold border border-orange-800 shadow-lg">
-                                                    SEP<br />27
+                                                    SEP<br />20
                                                 </div>
                                                 <div className="pr-12 relative z-10">
                                                     <h3 className="text-xl font-bold text-orange-200 mb-1 drop-shadow-lg">Idea Submissions Start</h3>
@@ -236,7 +236,7 @@ const Timeline = () => {
                                                 <div className="absolute bottom-3 right-8 w-1 h-1 bg-red-400 rounded-full animate-ping opacity-40" style={{ animationDelay: '0.9s' }}></div>
 
                                                 <div className="absolute top-2 right-2 bg-gradient-to-r from-gray-900 to-black text-gray-300 px-2 py-1 rounded text-xs font-bold border border-gray-700 shadow-lg">
-                                                    OCT<br />20
+                                                    OCT<br />15
                                                 </div>
                                                 <div className="pr-10 relative z-10">
                                                     <h3 className="text-lg font-bold text-gray-200 mb-1 drop-shadow-lg">Registration Deadline</h3>
@@ -260,7 +260,7 @@ const Timeline = () => {
                                                 <div className="absolute bottom-3 right-8 w-1 h-1 bg-red-400 rounded-full animate-ping opacity-40" style={{ animationDelay: '0.9s' }}></div>
 
                                                 <div className="absolute top-2 right-2 bg-gradient-to-r from-gray-900 to-black text-gray-300 px-2 py-1 rounded text-xs font-bold border border-gray-700 shadow-lg">
-                                                    OCT<br />20
+                                                    OCT<br />15
                                                 </div>
                                                 <div className="pr-12 relative z-10">
                                                     <h3 className="text-xl font-bold text-gray-200 mb-1 drop-shadow-lg">Registration Deadline</h3>
@@ -293,7 +293,7 @@ const Timeline = () => {
                                                 <div className="absolute bottom-4 left-6 w-1 h-1 bg-yellow-400 rounded-full animate-ping opacity-60" style={{ animationDelay: '0.7s' }}></div>
 
                                                 <div className="absolute top-2 right-2 bg-gradient-to-r from-gray-900 to-black text-yellow-300 px-2 py-1 rounded text-xs font-bold border border-yellow-700 shadow-lg">
-                                                    OCT<br />20
+                                                    OCT<br />15
                                                 </div>
                                                 <div className="pr-10 relative z-10">
                                                     <h3 className="text-lg font-bold text-yellow-200 mb-1 drop-shadow-lg">Idea Submission Deadline</h3>
@@ -318,7 +318,7 @@ const Timeline = () => {
                                                 <div className="absolute bottom-4 left-6 w-1 h-1 bg-yellow-400 rounded-full animate-ping opacity-60" style={{ animationDelay: '0.7s' }}></div>
 
                                                 <div className="absolute top-2 right-2 bg-gradient-to-r from-gray-900 to-black text-yellow-300 px-2 py-1 rounded text-xs font-bold border border-yellow-700 shadow-lg">
-                                                    OCT<br />20
+                                                    OCT<br />15
                                                 </div>
                                                 <div className="pr-12 relative z-10">
                                                     <h3 className="text-xl font-bold text-yellow-200 mb-1 drop-shadow-lg">Idea Submission Deadline</h3>
