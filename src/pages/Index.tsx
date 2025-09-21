@@ -19,7 +19,7 @@ const Index = () => {
     // Check if user has already seen the intro
     const hasSeenIntro = localStorage.getItem('hasSeenIntro');
     if (hasSeenIntro === 'true') {
-      setShowIntro(false); // Don't show intro if already seen
+      setShowIntro(true); // Don't show intro if already seen
       setIsLoading(false);
     } else {
       setShowIntro(true); // Show intro if not seen
